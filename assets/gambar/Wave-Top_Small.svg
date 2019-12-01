@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="384" viewBox="0 0 1920 384">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_982" data-name="Rectangle 982" width="1920" height="384" transform="translate(0 80)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#274fd3"/>
+      <stop offset="1" stop-color="#1488c6"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#6da7e8"/>
+      <stop offset="1" stop-color="#7e97b2"/>
+    </linearGradient>
+  </defs>
+  <g id="Mask_Group_10" data-name="Mask Group 10" transform="translate(0 -80)" clip-path="url(#clip-path)">
+    <g id="Group_1070" data-name="Group 1070" transform="translate(0 -346)">
+      <path id="Path_1292" data-name="Path 1292" d="M-5882,10714c255.5-44.275,166.979,186.419,411.979,212.543s366.927-139.063,568.019-108.046c247.319,38.148,318.526,24.659,506.243,108.046,386.818,106.845,88.623-231.214,442.15-184.567,505.47-456.709,13.288-616.294,13.288-616.294h-1959.5S-6137.5,10758.275-5882,10714Z" transform="translate(5882 -10138)" fill="url(#linear-gradient)"/>
+      <circle id="Ellipse_252" data-name="Ellipse 252" cx="547" cy="547" r="547" transform="translate(-600 43)" fill="url(#linear-gradient-2)" style="mix-blend-mode: soft-light;isolation: isolate"/>
+      <circle id="Ellipse_255" data-name="Ellipse 255" cx="306" cy="306" r="306" transform="translate(-292 -180)" opacity="0.255" fill="url(#linear-gradient-2)" style="mix-blend-mode: soft-light;isolation: isolate"/>
+      <circle id="Ellipse_254" data-name="Ellipse 254" cx="346" cy="346" r="346" transform="translate(527 -346)" opacity="0.232" fill="url(#linear-gradient-2)" style="mix-blend-mode: soft-light;isolation: isolate"/>
+      <circle id="Ellipse_253" data-name="Ellipse 253" cx="830" cy="830" r="830" transform="translate(796 -765)" fill="url(#linear-gradient-2)" style="mix-blend-mode: soft-light;isolation: isolate"/>
+    </g>
+  </g>
+</svg>

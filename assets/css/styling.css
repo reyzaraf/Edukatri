@@ -1,0 +1,177 @@
+    body{
+  background-image: url("assets/gambar/4035.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+    }
+    @import "bourbon";
+.forgot{
+    float: right;
+    text-align: right;
+    top:0px;
+    color:grey;
+    padding-bottom: 20px;
+}
+.text-grey{
+  color:grey;
+}
+.wrapper{
+  float: right;
+  padding:10px;
+  margin-right: 20px;
+}
+.btn-google{
+    color:black;
+    background:white;
+    width: 320px;
+    border:1px solid rgba(0,0,0,0.2);
+    margin-bottom: 10px;
+}
+.btn-google:hover{
+    color:white;
+    background:rgb(0,0,0);
+    width: 320px;
+    border:1px solid rgba(0,0,0,0.2);
+    margin-bottom: 10px;
+}
+.btn-facebook{
+    color:white;
+    background:rgba(0, 77, 221, 0.897);
+    width: 320px;
+    margin-bottom: 10px;
+    transition:0.1s ease-in-out;
+}
+.btn-facebook:hover{
+    background:white;
+    color:rgba(0,77,221,0.897)
+}
+.form-signin {
+  border-radius:20px;
+  max-width: 450px;
+  padding:60px;
+  margin: 0px auto;
+  background-color: #fff;
+  border: 1px solid rgba(0,0,0,0.1);  
+}
+  .form-signin-heading,
+	.checkbox {
+	  margin-bottom: 30px;
+    font-size: 25px;
+	}
+
+	.checkbox {
+	  font-weight: normal;
+	}
+
+	.form-control {
+      width:320px;
+	  position: relative;
+	  font-size: 14px;
+	  height: auto;
+	  padding: 5px;
+	}
+
+	input[type="text"] {
+	  margin-bottom: -1px;
+	}
+
+	input[type="password"] {
+	  margin-bottom: 20px;
+	  border-top-left-radius: 0;
+	  border-top-right-radius: 0;
+	}
+
+  .content{
+    top:-280px; 
+    position: relative;
+    z-index: 1;
+  }
+  .trip-section{
+
+    margin-left:100px;
+    padding:10px;
+  }
+  .rating{
+    padding-top: 5%;
+    padding-left:3%;
+  }
+  .price{
+    padding-top: 70px;
+    padding-left:30%;
+  }
+  .desc-tour{
+    padding-right: 10px;
+    font-size: 15px;
+    padding-top: 20px;
+    padding-left: 20px;
+  }
+  .preview-tour{
+    border-left:1px solid gray;
+  }
+  .date-from{
+    margin:12px;
+    padding: 12px;
+    font-size:12px;
+    border-radius: 5px;
+    border:1px solid grey;
+  }
+  .radio-btn{
+    border:1px solid darkblue;
+  }
+  /* .has-search{
+   
+  } */
+  .has-search .form-control {
+    padding-left: 2.375rem;
+    margin:-5px;
+    box-shadow: 3px 4px 34px 6px rgba(0,0,0,0.33);
+    
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+  .btn-tour{
+    width:150px;
+  }
+  .btn-show{
+    margin-left: 30px;
+    float: right;
+    text-align: right;
+    position: inherit;
+    font-size: 14px;
+  }
+    .bg-white{
+        background:whitesmoke !important;
+    }
+    .box-footer{
+        background:#304ffe ;
+        height:140px;
+    }
+    .price-range{
+      width: 125px;
+      border:1px solid grey;
+      border-radius: 6px;
+      font-size: 14px;
+      text-align: left;
+      padding:6px;
+
+    }
+    .date-range{
+      border:0px;
+      width: 110px;
+    }
+    .text-white{
+      color:white;
+    }
+    .text-orange{
+      color:#ffd800;
+    }
