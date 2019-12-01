@@ -6,85 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Home</title>
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/slider.css">
-    <link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
-    <link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap" rel="stylesheet">
 
+    <link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+    <link rel="stylesheet" type="text/css" href="assets/vendors/bootstrap/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/slider.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="col"></div>
-            <div class="col-lg-8">
-
-                <section class="carousel-wrap">
-                    <ul class="carousel">
-                        <li class="items main-pos" id="1">
-                            <img src="http://placehold.it/350x100?text=10">
-                        </li>
-                        <li class="items right-pos" id="2">
-                            <img src="http://placehold.it/350x100?text=10">
-                        </li>
-                        <li class="items back-pos" id="3">
-                            <img src="http://placehold.it/350x100?text=10">
-
-                        </li>
-                        <li class="items back-pos" id="4">
-                            <img src="http://placehold.it/350x100?text=10">
-
-                        </li>
-                        <li class="items back-pos" id="5">
-                            <img src="http://placehold.it/350x100?text=10">
-                        </li>
-                        <li class="items back-pos" id="6">
-                            <img src="http://placehold.it/350x100?text=10">
-
-                        </li>
-                        <li class="items left-pos" id="7">
-                            <img src="http://placehold.it/350x100?text=10">
-                    </ul>
-                </section>
-
-            </div>
-            <div class="col"></div>
-        </div>
-
-    </div>
-    <div class="footer">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <path fill="#0099ff" fill-opacity="1" d="M0,128L26.7,112C53.3,96,107,64,160,58.7C213.3,53,267,75,320,85.3C373.3,96,427,96,480,80C533.3,64,587,32,640,21.3C693.3,11,747,21,800,32C853.3,43,907,53,960,69.3C1013.3,85,1067,107,1120,133.3C1173.3,160,1227,192,1280,176C1333.3,160,1387,96,1413,64L1440,32L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"></path>
-        </svg>
-        <div class="box-footer">
-            <div class="logo-footer">
-                <!-- <img src="" alt=""> -->
-                <h1>Logo</h1>
+    <nav class="navbar navbar-expand-md bg-white mb-4">
+        <div class="container">
+            <a class="navbar-brand text-orange" href="#"> Edukatrip </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="pl-5 ml-5 collapse navbar-collapse btn-sect" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+                </ul>
+                <div class="form-inline mt-2 mt-md-0">
+                    <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit"><b>Become a Host</b></button>
+                    <a class="text-dark" href=""><span class="ml-3 pl-1 fa fa-plane"><b class="pl-2">My Trip</b></span></a>
+                </div>
             </div>
         </div>
-    </div>
+    </nav>
+
+    <script src="assets/bootstrap/js/jquery.js"></script>
+    <script src="assets/bootstrap/js/popper.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src='https://github.com/mattbryson/TouchSwipe-Jquery-Plugin/blob/master/jquery.touchSwipe.min.js'></script>
+    <script src="assets/js/slider.js"></script>
 </body>
-<style>
-    .box-footer {
-        background: #304ffe;
-        height: 140px;
-    }
-
-    .footer {
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        height: 60px;
-        /* Set the fixed height of the footer here */
-        line-height: 60px;
-        /* Vertically center the text there */
-        background-color: #f5f5f5;
-    }
-</style>
 
 </html>
-<script src="assets/bootstrap/js/jquery.js"></script>
-<script src="assets/bootstrap/js/popper.js"></script>
-<script src="assets/bootstrap/js/bootstrap.min.js"></script>
-<script src='https://github.com/mattbryson/TouchSwipe-Jquery-Plugin/blob/master/jquery.touchSwipe.min.js'></script>
-<script src="assets/js/slider.js"></script>

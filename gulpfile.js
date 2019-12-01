@@ -36,22 +36,22 @@ let serve = () => {
 
 let html = () => {
 	return src('./app/html/*.html')
-		.pipe(fileinclude())
-		.pipe(htmlbeautify())
-		.pipe(dest('./dist/'))
+	.pipe(fileinclude())
+	.pipe(htmlbeautify())
+	.pipe(dest('./dist/'))
 }
 
 function scss() {
 	return src('./app/scss/app.scss')
-		.pipe(sourcemaps.init())
-		.pipe(plumber())
-		.pipe(sass().on('error', sass.logError))
-		.pipe(autoprefixer('last 2 versions'))
-		.pipe(sourcemaps.write('./'))
-		.pipe(plumber.stop())
-		.pipe(rename('style.css'))
-		.pipe(dest('./dist/assets/css/'))
-		.pipe(browserSync.stream())
+	.pipe(sourcemaps.init())
+	.pipe(plumber())
+	.pipe(sass().on('error', sass.logError))
+	.pipe(autoprefixer('last 2 versions'))
+	.pipe(sourcemaps.write('./'))
+	.pipe(plumber.stop())
+	.pipe(rename('style.css'))
+	.pipe(dest('./dist/assets/css/'))
+	.pipe(browserSync.stream())
 }
 
 function js() {
