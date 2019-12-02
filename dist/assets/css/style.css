@@ -1,4 +1,46 @@
 * {
   font-family: "Nunito Sans", sans-serif; }
 
+nav {
+  background: #fff;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
+  nav .navbar-brand a {
+    color: #ff8440;
+    text-decoration: none;
+    font-weight: bold; }
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+    nav ul .btn {
+      font-size: 0.9em; }
+
+.btn {
+  background: #eee;
+  color: #666;
+  border: 0; }
+  .btn.btn-outline {
+    background: transparent;
+    border: 1.5px solid #ddd;
+    font-weight: bold; }
+  .btn.btn-white {
+    background: white;
+    border: 0; }
+    .btn.btn-white:hover {
+      background: #fafafa;
+      color: inherit; }
+  .btn.btn-transparent {
+    background: transparent; }
+  .btn.btn-icon i {
+    color: #2456d1; }
+  .btn.btn-icon.btn-icon-left i {
+    margin-right: 5px; }
+  .btn.btn-icon.btn-icon-right i {
+    margin-left: 5px; }
+  .btn:hover {
+    color: inherit; }
+
 /*# sourceMappingURL=app.css.map */

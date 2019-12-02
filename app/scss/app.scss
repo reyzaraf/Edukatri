@@ -1,5 +1,6 @@
 @import 'vars';
 
-* {
-    font-family: $font-primary;
-}
+@import 'base/base';
+
+@import 'components/navbar';
+@import 'components/buttons';
