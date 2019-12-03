@@ -5,30 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>My Booking</title>
-        <link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
-    <link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
-    <link rel="stylesheet" type="text/css" href="assets/css/styling.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/price-range.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.6.2/css/bootstrap-slider.css">
+    @@include('template/resources/styles.html')
 </head>
 <body>
         <div class="wrapper">
-                <form class="form-signin">       
-                  <h2 class="form-signin-heading"><b> Start your journey With <span class="text-orange">Edukatrip</span></b></h2>
-                  <a class="btn btn-primary btn-google" href="#"><span class="fa fa-google"></span>  Login with Google</a><br>
-                  <a class="btn btn-primary btn-facebook" href="#"><span class="fa fa-facebook"></span>  Login with Facebook</a>
-                  <br><br>
-                  <label><b>Username</b></label><br>
-                  <input type="text" class="form-control" name="username" placeholder="Email Address" required="" autofocus="" /><br>
-                  <label><b>Password</b></label><br>
-                  <input type="password" class="form-control" name="password" placeholder="Password" required=""/>      
-                    <a class="forgot" href="#">Forgot Password ?</a>
-                  <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>  <br>
-                  <span>Don't Have Account ?&nbsp; </span> <a href="">Register</a>
+          <form class="form-signin">       
+            <h2 class="form-signin-heading"><b> Start your journey With <span class="text-orange">Edukatrip</span></b></h2>
+            <a class="btn btn-primary btn-google" href="#"><span class="fa fa-google"></span>  Login with Google</a><br>
+            <a class="btn btn-primary btn-facebook" href="#"><span class="fa fa-facebook"></span>  Login with Facebook</a>
+            <br><br>
+            <label><b>Username</b></label><br>
+            <input type="text" class="form-control" name="username" placeholder="Email Address" required="" autofocus="" /><br>
+            <label><b>Password</b></label><br>
+            <input type="password" class="form-control" name="password" placeholder="Password" required=""/>      
+              <a class="forgot" href="#">Forgot Password ?</a>
+            <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>  <br>
+            <span>Don't Have Account ?&nbsp; </span> <a href="">Register</a>
 
-                </form>
-              </div>
+          </form>
+        </div>
+  @@include('template/resources/scripts.html')
 </body>
 <style>
     body{
@@ -213,10 +209,3 @@
 
 </style>
 </html>
-<script src="assets/bootstrap/js/jquery.js"></script>
-<script src="assets/bootstrap/js/popper.js"></script>
-<script src="assets/bootstrap/js/bootstrap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.6.2/bootstrap-slider.js"></script>
-<script src='https://github.com/mattbryson/TouchSwipe-Jquery-Plugin/blob/master/jquery.touchSwipe.min.js'></script>
-<script  src="assets/js/slider.js"></script>
-<script  src="assets/js/range-slider.js"></script>
