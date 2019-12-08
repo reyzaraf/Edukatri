@@ -59,7 +59,7 @@ function js() {
 	.pipe(sourcemaps.init())
 	.pipe(webpack(require('./webpack.config.js')))
 	.pipe(sourcemaps.write('./'))
-	.pipe(dest('./dist/js/'))
+	.pipe(dest('./dist/assets/js/'))
 }
 
 exports.html = html;
