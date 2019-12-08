@@ -1,17 +1,69 @@
-<nav>
-    <div class="container d-flex justify-content-between align-items-center">
-        <div class="navbar-brand">
-            <a href="#">Edukatrip</a>
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-left">
+            <a class="navbar-brand" href="#">Edukatrip</a>
         </div>
-        <ul class="d-flex justify-content-between align-items-center">
-            <li class="mr-2"><a href="#" class="btn btn-outline">Become a Host</a></li>
-            <li>
-                <a href="#" class="btn btn-white btn-icon btn-icon-left d-flex align-items-center">
-                    <i class="material-icons">local_activity</i>
-                    <span>My Trip</span>
+        <div class="navbar-right">
+            <ul class="navbar-menu">
+                <li class="navbar-button">
+                    <a href="#">Become a Host</a>
+                </li>
+                <li class="navbar-link with-icon">
+                    <a href="#">
+                        <i class="material-icons">local_activity</i>
+                        <span>My Trip</span>
+                    </a>
+                </li>
+                <li class="navbar-link icon">
+                    <a href="#">
+                        <i class="material-icons">notifications</i>
+                    </a>
+                </li>
+            </ul>
+            <div class="navbar-separator"></div>
+            <div class="navbar-profile">
+                <a href="#" id="navbarProfileDropdownButton">
+                    <span class="navbar-profile-name">Ghany Razaq Arghantara</span>
+                    <span class="navbar-profile-image">
+                        <img src="./assets/img/profile-1.png" alt="">
+                    </span>
                 </a>
-            </li>
-            <li><a href="#" class="btn btn-white btn-icon d-flex align-items-center"><i class="material-icons">notifications</i></a></li>
-        </ul>
+                <div class="navbar-profile-dropdown">
+                    <div class="navbar-profile-top">
+                        <div class="navbar-profile-progress-wrapper">
+                            <div class="navbar-profile-progress" style="width: 50%"></div>
+                        </div>
+                        <a href="#" class="navbar-profile-complete-task">
+                            <span>Complete Your Profile</span>
+                            <i class="material-icons">keyboard_arrow_right</i>
+                        </a>
+                    </div>
+                    <div class="navbar-profile-bottom">
+                        <ul class="navbar-profile-bottom-left">
+                            <li>
+                                <a href="#">
+                                    <span>Edukatrip Points</span>
+                                    <span>854</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>My Rewards</span>
+                                    <span>2</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="navbar-profile-bottom-separator"></div>
+                        <ul class="navbar-profile-bottom-right">
+                            <li><a href="#">Profile</a></li>
+                            <li><a href="#">Wishlist</a></li>
+                            <li><a href="#">Settings</a></li>
+                            <br>
+                            <li><a href="#">Log Out</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </nav>
