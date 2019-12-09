@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+    @@include('template/resources/styles.html')
+</head>
+<body>
+    @@include('components/navbar.html')
+    
+    
+    <div id="payment">
+      <div class="container">
+        <div class="payment-background"></div>
+        <div class="payment-wrapper-outer">
+          <div class="payment-page-title">Review your booking</div>
+          <div class="payment-wrapper">
+            <div class="payment-top">
+              <div class="payment-pipe-wrapper">
+                <div class="payment-pipe-item active">
+                  <div class="payment-pipe-step">1</div>
+                  <div class="payment-pipe-text">Review Book</div>
+                </div>
+                <div class="payment-pipe-item">
+                  <div class="payment-pipe-step">2</div>
+                  <div class="payment-pipe-text">Choose Payment Method</div>
+                </div>
+                <div class="payment-pipe-item">
+                  <div class="payment-pipe-step">3</div>
+                  <div class="payment-pipe-text">Payment</div>
+                </div>
+                <div class="payment-pipe-item">
+                  <div class="payment-pipe-step">4</div>
+                  <div class="payment-pipe-text">Receipt</div>
+                </div>
+              </div>
+            </div>
+            <div class="payment-bottom">
+              <div class="payment-bottom-left"></div>
+              <div class="payment-bottom-right"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    @@include('template/resources/scripts.html')
+</body>
+</html>
