@@ -12,7 +12,7 @@
     transform: rotateZ(180deg);
   }
   .payment-wrapper-outer {
-    padding: 20px 100px;
+    padding: 20px 50px;
 
     .payment-page-title {
       color: white;
@@ -20,11 +20,83 @@
       font-size: 1.2em;
     }
     .payment-wrapper {
+      width: 100%;
+      background: white;
+      border-radius: 10px;
+      margin-top: 15px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+
       .payment-top {
-        .payment-pipe {}
+        .payment-pipe-wrapper {
+          padding: 30px 0;
+          border-bottom: 1px solid #eee;
+          @include my-flex(row, center, center);
+
+          .payment-pipe-item {
+            flex: 1;
+            position: relative;
+            text-align: center;
+            z-index: 11;
+            background: white;
+            @include my-flex(column, center, center);
+
+            .payment-pipe-step {
+              width: 40px;
+              height: 40px;
+              background: #eee;
+              color: #ccc;
+              border-radius: 100%;
+              position: relative;
+              @include my-flex(row, center, center);
+            }
+
+            .payment-pipe-text {
+              color: #ccc;
+              margin-top: 5px;
+            }
+
+            &:not(:first-of-type):before {
+              position: absolute;
+              content: '';
+              left: 0;
+              top: 25%;
+              height: 5px;
+              transform: translateX(-50%);
+              width: 75%;
+              z-index: -1;
+              background: #eee;
+              border-radius: 100px;
+            }
+            
+            &.active {
+              .payment-pipe-step {
+                background: $color-primary;
+                color: white;
+              }
+              
+              .payment-pipe-text {
+                color: $color-primary;
+                font-weight: bold;
+              }
+
+              &:not(:first-of-type):before {
+                background: $color-primary;
+              }
+            }
+          }
+        }
       }
       .payment-bottom {
-        .payment-bottom-left {}
+        section {
+          padding: 30px 40px;
+        }
+        .payment-bottom-left {
+          border-right: 1px solid #eee;
+          
+          section:not(:last-of-type) {
+            border-bottom: 1px solid #eee;
+          }
+        }
         .payment-bottom-right {}
       }
     }
