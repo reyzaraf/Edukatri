@@ -12,7 +12,7 @@
     transform: rotateZ(180deg);
   }
   .payment-wrapper-outer {
-    padding: 20px 50px;
+    padding: 50px;
 
     .payment-page-title {
       color: white;
@@ -29,7 +29,7 @@
       .payment-top {
         .payment-pipe-wrapper {
           padding: 30px 0;
-          border-bottom: 1px solid #eee;
+          border-bottom: 1px solid #ccc;
           @include my-flex(row, center, center);
 
           .payment-pipe-item {
@@ -52,17 +52,17 @@
 
             .payment-pipe-text {
               color: #ccc;
-              margin-top: 5px;
+              margin-top: 10px;
             }
 
             &:not(:first-of-type):before {
               position: absolute;
               content: '';
               left: 0;
-              top: 25%;
+              top: 18px;
               height: 5px;
               transform: translateX(-50%);
-              width: 75%;
+              width: 78%;
               z-index: -1;
               background: #eee;
               border-radius: 100px;
@@ -89,12 +89,24 @@
       .payment-bottom {
         section {
           padding: 30px 40px;
+
+          .section-title {
+            margin-bottom: 15px;
+          }
+
+          & > div {
+            padding-bottom: 5px;
+          }
+
+          &:first-of-type {
+            padding-top: 40px;
+          }
         }
         .payment-bottom-left {
-          border-right: 1px solid #eee;
+          border-right: 1px solid #ccc;
           
           section:not(:last-of-type) {
-            border-bottom: 1px solid #eee;
+            border-bottom: 1px solid #ccc;
           }
         }
         .payment-bottom-right {}
