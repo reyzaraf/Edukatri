@@ -1,6 +1,10 @@
 @import 'vars';
 
+@import 'helpers/mixins';
+
 @import 'base/base';
 
 @import 'components/navbar';
 @import 'components/buttons';
+
+@import 'pages/payment';

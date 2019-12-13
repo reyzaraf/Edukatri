@@ -1,0 +1,116 @@
+#payment {
+  
+  .payment-background {
+    background: url(../img/bg-top.png) top center no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: -200px;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    transform: rotateZ(180deg);
+  }
+  .payment-wrapper-outer {
+    padding: 50px;
+
+    .payment-page-title {
+      color: white;
+      font-weight: bold;
+      font-size: 1.2em;
+    }
+    .payment-wrapper {
+      width: 100%;
+      background: white;
+      border-radius: 10px;
+      margin-top: 15px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+
+      .payment-top {
+        .payment-pipe-wrapper {
+          padding: 30px 0;
+          border-bottom: 1px solid #ccc;
+          @include my-flex(row, center, center);
+
+          .payment-pipe-item {
+            flex: 1;
+            position: relative;
+            text-align: center;
+            z-index: 11;
+            background: white;
+            @include my-flex(column, center, center);
+
+            .payment-pipe-step {
+              width: 40px;
+              height: 40px;
+              background: #eee;
+              color: #ccc;
+              border-radius: 100%;
+              position: relative;
+              @include my-flex(row, center, center);
+            }
+
+            .payment-pipe-text {
+              color: #ccc;
+              margin-top: 10px;
+            }
+
+            &:not(:first-of-type):before {
+              position: absolute;
+              content: '';
+              left: 0;
+              top: 18px;
+              height: 5px;
+              transform: translateX(-50%);
+              width: 78%;
+              z-index: -1;
+              background: #eee;
+              border-radius: 100px;
+            }
+            
+            &.active {
+              .payment-pipe-step {
+                background: $color-primary;
+                color: white;
+              }
+              
+              .payment-pipe-text {
+                color: $color-primary;
+                font-weight: bold;
+              }
+
+              &:not(:first-of-type):before {
+                background: $color-primary;
+              }
+            }
+          }
+        }
+      }
+      .payment-bottom {
+        section {
+          padding: 30px 40px;
+
+          .section-title {
+            margin-bottom: 15px;
+          }
+
+          & > div {
+            padding-bottom: 5px;
+          }
+
+          &:first-of-type {
+            padding-top: 40px;
+          }
+        }
+        .payment-bottom-left {
+          border-right: 1px solid #ccc;
+          
+          section:not(:last-of-type) {
+            border-bottom: 1px solid #ccc;
+          }
+        }
+        .payment-bottom-right {}
+      }
+    }
+  }
+}
