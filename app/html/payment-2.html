@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+    @@include('template/resources/styles.html')
+</head>
+<body>
+    @@include('components/navbar.html')
+    
+    <div id="payment">
+      <div class="container">
+        <div class="payment-background"></div>
+        <div class="payment-wrapper-outer">
+          <div class="payment-page-title">Review your booking</div>
+          <div class="payment-wrapper">
+            <div class="payment-top">
+              <div class="payment-pipe-wrapper">
+                <div class="payment-pipe-item done">
+                  <div class="payment-pipe-step">
+                    <i class="material-icons">check</i>
+                  </div>
+                  <div class="payment-pipe-text">Review Book</div>
+                </div>
+                <div class="payment-pipe-item active">
+                  <div class="payment-pipe-step">2</div>
+                  <div class="payment-pipe-text">Choose Payment Method</div>
+                </div>
+                <div class="payment-pipe-item">
+                  <div class="payment-pipe-step">3</div>
+                  <div class="payment-pipe-text">Payment</div>
+                </div>
+                <div class="payment-pipe-item">
+                  <div class="payment-pipe-step">4</div>
+                  <div class="payment-pipe-text">Receipt</div>
+                </div>
+              </div>
+            </div>
+            <div class="payment-bottom row m-0">
+              <div class="payment-bottom-left col-6 p-0">
+                <section>
+                  <h5 class="section-title"><strong>Yogyakarta Tour</strong></h5>
+                  <div class="row m-0">
+                    <div class="col-5 p-0">Date of Tour</div>
+                    <div class="col-7 p-0 font-weight-bold">Minggu, 12 Juni 2019</div>
+                  </div>
+                  <div class="row m-0">
+                    <div class="col-5 p-0">Tour Guide</div>
+                    <div class="col-7 p-0 font-weight-bold">Tour Guide A</div>
+                  </div>
+                  <div class="row m-0">
+                    <div class="col-5 p-0">Total Person</div>
+                    <div class="col-7 p-0 font-weight-bold">4</div>
+                  </div>
+                </section>
+                <section>
+                  <h5 class="section-title"><strong>Price Details</strong></h5>
+                  <div class="row m-0 ">
+                    <div class="col-6 p-0">Tour Cost</div>
+                    <div class="col-6 p-0 text-right text-color-blue-light">Rp.436.000</div>
+                  </div>
+                  <div class="row m-0">
+                    <div class="col-6 p-0">Tax</div>
+                    <div class="col-6 p-0 text-right text-color-blue-light">Included</div>
+                  </div>
+                  <div class="row m-0 align-items-center">
+                    <div class="col-6 p-0">Total</div>
+                    <div class="col-6 p-0 text-right text-color-secondary text-size-big-1 font-weight-bold">Rp.110.000</div>
+                  </div>
+                </section>
+                <section>
+                  <div class="row">
+                    <div class="col-6">Cancellation Policy Applies</div>
+                    <div class="col-6 text-right">
+                      <a href="#">See Details</a>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="payment-bottom-right col-6 p-0">
+                <section>
+                  <h5 class="section-title"><strong>Customer Data</strong></h5>
+                  <form action="#">
+                    <div class="row mb-3">
+                      <div class="input-group col-6 d-flex align-items-center">
+                        <input type="radio" id="one" class="mr-2">
+                        <label for="one" class="m-0">Book for Myself</label>
+                      </div>
+                      <div class="input-group col-6 d-flex align-items-center">
+                        <input type="radio" id="two" class="mr-2">
+                        <label for="two" class="m-0">Book for Other</label>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="form-group col">
+                        <label for="two" class="m-0">Name</label>
+                        <input type="input" class="form-control">
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="form-group col">
+                        <label for="two" class="m-0">Identity ID (KTP / Passport)</label>
+                        <input type="input" class="form-control">
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12 d-flex justify-content-end">
+                          <button type="submit" class="btn btn-primary">Choose Payment Method</button>
+                      </div>
+                    </div>
+                  </form>
+                </section>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    @@include('template/resources/scripts.html')
+</body>
+</html>

@@ -322,7 +322,7 @@ nav {
           @media screen and (max-width: 992px) {
             #payment .payment-wrapper-outer .payment-wrapper .payment-top .payment-pipe-wrapper .payment-pipe-item:not(:first-of-type):before {
               width: 65%; } }
-        #payment .payment-wrapper-outer .payment-wrapper .payment-top .payment-pipe-wrapper .payment-pipe-item.active .payment-pipe-step {
+        #payment .payment-wrapper-outer .payment-wrapper .payment-top .payment-pipe-wrapper .payment-pipe-item.active .payment-pipe-step, #payment .payment-wrapper-outer .payment-wrapper .payment-top .payment-pipe-wrapper .payment-pipe-item.done .payment-pipe-step {
           background: #2456d1;
           color: white; }
         #payment .payment-wrapper-outer .payment-wrapper .payment-top .payment-pipe-wrapper .payment-pipe-item.active .payment-pipe-text {

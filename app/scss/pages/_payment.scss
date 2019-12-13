@@ -76,12 +76,14 @@
               }
             }
             
-            &.active {
+            &.active, &.done {
               .payment-pipe-step {
                 background: $color-primary;
                 color: white;
               }
-              
+            }
+
+            &.active {
               .payment-pipe-text {
                 color: $color-primary;
                 font-weight: bold;
