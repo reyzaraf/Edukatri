@@ -1,6 +1,51 @@
 * {
   font-family: "Nunito Sans", sans-serif; }
 
+.text-color-primary {
+  color: #2456d1; }
+
+.text-color-blue-light {
+  color: #4874e0; }
+
+.text-color-secondary {
+  color: #ff8440; }
+
+.text-color-grey {
+  color: #ccc; }
+
+.text-color-888 {
+  color: #888; }
+
+.text-color-grey-darken-2 {
+  color: #999999; }
+
+.text-size-big-1 {
+  font-size: 1.1em; }
+
+.text-size-big-2 {
+  font-size: 1.2em; }
+
+.text-size-big-3 {
+  font-size: 1.3em; }
+
+.text-size-big-4 {
+  font-size: 1.4em; }
+
+.text-size-big-5 {
+  font-size: 1.5em; }
+
+.text-size-big-6 {
+  font-size: 1.6em; }
+
+.text-size-normal {
+  font-size: 1em; }
+
+.text-size-small-1 {
+  font-size: 0.9em; }
+
+.border-bottom-1px-grey {
+  border-bottom: 1px solid #eee; }
+
 nav {
   background: #fff;
   padding-top: 15px;
@@ -224,10 +269,13 @@ nav {
 
 #payment .payment-wrapper-outer {
   padding: 50px; }
+  @media screen and (max-width: 992px) {
+    #payment .payment-wrapper-outer {
+      padding: 50px 0; } }
   #payment .payment-wrapper-outer .payment-page-title {
     color: white;
     font-weight: bold;
-    font-size: 1.2em; }
+    font-size: 1.4em; }
   #payment .payment-wrapper-outer .payment-wrapper {
     width: 100%;
     background: white;
@@ -237,7 +285,7 @@ nav {
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); }
     #payment .payment-wrapper-outer .payment-wrapper .payment-top .payment-pipe-wrapper {
       padding: 30px 0;
-      border-bottom: 1px solid #ccc;
+      border-bottom: 1px solid #eee;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -245,9 +293,9 @@ nav {
       -webkit-box-direction: normal;
           -ms-flex-direction: row;
               flex-direction: row;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start;
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center; }
@@ -307,14 +355,17 @@ nav {
           z-index: -1;
           background: #eee;
           border-radius: 100px; }
-        #payment .payment-wrapper-outer .payment-wrapper .payment-top .payment-pipe-wrapper .payment-pipe-item.active .payment-pipe-step {
+          @media screen and (max-width: 992px) {
+            #payment .payment-wrapper-outer .payment-wrapper .payment-top .payment-pipe-wrapper .payment-pipe-item:not(:first-of-type):before {
+              width: 65%; } }
+        #payment .payment-wrapper-outer .payment-wrapper .payment-top .payment-pipe-wrapper .payment-pipe-item.active .payment-pipe-step, #payment .payment-wrapper-outer .payment-wrapper .payment-top .payment-pipe-wrapper .payment-pipe-item.done .payment-pipe-step {
           background: #2456d1;
           color: white; }
+        #payment .payment-wrapper-outer .payment-wrapper .payment-top .payment-pipe-wrapper .payment-pipe-item.active:not(:first-of-type):before, #payment .payment-wrapper-outer .payment-wrapper .payment-top .payment-pipe-wrapper .payment-pipe-item.done:not(:first-of-type):before {
+          background: #2456d1; }
         #payment .payment-wrapper-outer .payment-wrapper .payment-top .payment-pipe-wrapper .payment-pipe-item.active .payment-pipe-text {
           color: #2456d1;
           font-weight: bold; }
-        #payment .payment-wrapper-outer .payment-wrapper .payment-top .payment-pipe-wrapper .payment-pipe-item.active:not(:first-of-type):before {
-          background: #2456d1; }
     #payment .payment-wrapper-outer .payment-wrapper .payment-bottom section {
       padding: 30px 40px; }
       #payment .payment-wrapper-outer .payment-wrapper .payment-bottom section .section-title {
@@ -324,8 +375,8 @@ nav {
       #payment .payment-wrapper-outer .payment-wrapper .payment-bottom section:first-of-type {
         padding-top: 40px; }
     #payment .payment-wrapper-outer .payment-wrapper .payment-bottom .payment-bottom-left {
-      border-right: 1px solid #ccc; }
+      border-right: 1px solid #eee; }
       #payment .payment-wrapper-outer .payment-wrapper .payment-bottom .payment-bottom-left section:not(:last-of-type) {
-        border-bottom: 1px solid #ccc; }
+        border-bottom: 1px solid #eee; }
 
 /*# sourceMappingURL=app.css.map */

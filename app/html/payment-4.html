@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+    @@include('template/resources/styles.html')
+</head>
+<body>
+    @@include('components/navbar.html')
+    
+    <div id="payment">
+      <div class="container">
+        <div class="payment-background"></div>
+        <div class="payment-wrapper-outer">
+          <div class="payment-page-title">Your Receipt</div>
+          <div class="payment-wrapper">
+            <div class="payment-top">
+              <div class="payment-pipe-wrapper">
+                <div class="payment-pipe-item done">
+                  <div class="payment-pipe-step">
+                    <i class="material-icons">check</i>
+                  </div>
+                  <div class="payment-pipe-text">Review Book</div>
+                </div>
+                <div class="payment-pipe-item done">
+                  <div class="payment-pipe-step">
+                    <i class="material-icons">check</i>
+                  </div>
+                  <div class="payment-pipe-text">Choose Payment Method</div>
+                </div>
+                <div class="payment-pipe-item done">
+                    <div class="payment-pipe-step">
+                      <i class="material-icons">check</i>
+                    </div>
+                  <div class="payment-pipe-text">Payment</div>
+                </div>
+                <div class="payment-pipe-item active">
+                  <div class="payment-pipe-step">4</div>
+                  <div class="payment-pipe-text">Receipt</div>
+                </div>
+              </div>
+            </div>
+            <div class="row flex-column text-center p-5 align-items-center">
+              <div class="col-6 d-flex flex-column align-items-center justify-content-center pb-4">
+                <div class="h2"><strong>Payment Success</strong></div>
+                <div class="my-4 col-5">
+                  <img src="./assets/img/check.png" alt="" class="img-fluid">
+                </div>
+                <a href="#" class="btn btn-primary px-5 py-2">View My Receipt</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    @@include('template/resources/scripts.html')
+</body>
+</html>

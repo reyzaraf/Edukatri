@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+    @@include('template/resources/styles.html')
+</head>
+<body>
+    @@include('components/navbar.html')
+    
+    <div id="payment">
+      <div class="container">
+        <div class="payment-background"></div>
+        <div class="payment-wrapper-outer">
+          <div class="payment-page-title">Choose Payment Method</div>
+          <div class="payment-wrapper">
+            <div class="payment-top">
+              <div class="payment-pipe-wrapper">
+                <div class="payment-pipe-item done">
+                  <div class="payment-pipe-step">
+                    <i class="material-icons">check</i>
+                  </div>
+                  <div class="payment-pipe-text">Review Book</div>
+                </div>
+                <div class="payment-pipe-item active">
+                  <div class="payment-pipe-step">2</div>
+                  <div class="payment-pipe-text">Choose Payment Method</div>
+                </div>
+                <div class="payment-pipe-item">
+                  <div class="payment-pipe-step">3</div>
+                  <div class="payment-pipe-text">Payment</div>
+                </div>
+                <div class="payment-pipe-item">
+                  <div class="payment-pipe-step">4</div>
+                  <div class="payment-pipe-text">Receipt</div>
+                </div>
+              </div>
+            </div>
+            <div class="payment-bottom row m-0">
+              <div class="payment-bottom-left col-6 p-0">
+                <section>
+                  <h5 class="section-title mb-5"><strong>Choose Payment Method</strong></h5>
+                  <div class="mb-3"><strong>Bank Transfer</strong></div>
+                  <p class="mb-4 text-color-888">If you choose bank transfer, you will transfer only to bank listed below</p>
+                  <div class="row align-items-center mb-3">
+                    <div class="col"><img src="./assets/img/banks/bri.png" alt="" class="img-fluid"></div>
+                    <div class="col"><img src="./assets/img/banks/mandiri.png" alt="" class="img-fluid"></div>
+                    <div class="col"><img src="./assets/img/banks/bni.png" alt="" class="img-fluid"></div>
+                    <div class="col"><img src="./assets/img/banks/bca.png" alt="" class="img-fluid"></div>
+                  </div>
+                  <p>All bank account name is <strong>PT.Edukatrip</strong></p>
+                </section>
+              </div>
+              <div class="payment-bottom-right col-6 p-0">
+                <section>
+                  <div class="row m-0 mb-5 align-items-center">
+                    <div class="col-6 p-0">Total</div>
+                    <div class="col-6 p-0 text-right d-flex align-items-center justify-content-end">
+                      <span class="text-color-secondary text-size-big-1 font-weight-bold mr-1">Rp.110.000</span>
+                      <i class="material-icons text-color-grey text-size-normal">expand_more</i>
+                    </div>
+                  </div>
+                  <form action="#" class="row m-0 mb-5 form-step-2">
+                    <div class="input-group row m-0 justify-content-between align-items-center pb-3  border-bottom-1px-grey">
+                      <label for="credit-card-1" class="row m-0 align-items-center">
+                        <i class="material-icons mr-3 text-color-primary">credit_card</i>
+                        <span>Saved Cards</span>
+                      </label>
+                      <input type="radio" name="credit-card" id="credit-card-1" class="mx-2">
+                    </div>
+                    <div class="input-group row m-0 justify-content-between align-items-center py-3  border-bottom-1px-grey">
+                      <label for="credit-card-2" class="row m-0 align-items-center">
+                        <i class="material-icons mr-3 text-color-primary">account_balance_wallet</i>
+                        <span>Debit/Credit Cards</span>
+                      </label>
+                      <input type="radio" name="credit-card" id="credit-card-2" class="mx-2">
+                    </div>
+                    <div class="input-group row m-0 justify-content-between align-items-center py-3  border-bottom-1px-grey">
+                      <label for="credit-card-3" class="row m-0 align-items-center">
+                        <i class="material-icons mr-3 text-color-primary">account_balance</i>
+                        <span>Bank Transfer</span>
+                      </label>
+                      <input type="radio" name="credit-card" id="credit-card-3" class="mx-2">
+                    </div>
+                    <div class="input-group row m-0 justify-content-between align-items-center py-3 border-bottom-1px-grey">
+                      <label for="credit-card-4" class="row m-0 align-items-center">
+                        <i class="material-icons mr-3 text-color-primary">shopping_basket</i>
+                        <span>Minimarket</span>
+                      </label>
+                      <input type="radio" name="credit-card" id="credit-card-4" class="mx-2">
+                    </div>
+                    <div class="col-12 mt-4 p-0 d-flex justify-content-end">
+                        <button type="submit" class="btn btn-primary">Choose</button>
+                    </div>
+                  </form>
+                </section>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    @@include('template/resources/scripts.html')
+</body>
+</html>
