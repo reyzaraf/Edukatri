@@ -2,7 +2,15 @@
     font-family: $font-primary;
 }
 
+.text-color-primary { color: $color-primary; }
 .text-color-blue-light { color: lighten($color-primary, 10%); }
 .text-color-secondary { color: $color-secondary; }
+.text-color-grey { color: #ccc; }
+.text-color-888 { color: #888; }
+.text-color-grey-darken-2 { color: darken(#ccc, 20%); }
 
 .text-size-big-1 { font-size: 1.2em; }
+.text-size-normal { font-size: 1em; }
+.text-size-small-1 { font-size: 0.9em; }
+
+.border-bottom-1px-grey { border-bottom: 1px solid #eee; }

@@ -1,14 +1,35 @@
 * {
   font-family: "Nunito Sans", sans-serif; }
 
+.text-color-primary {
+  color: #2456d1; }
+
 .text-color-blue-light {
   color: #4874e0; }
 
 .text-color-secondary {
   color: #ff8440; }
 
+.text-color-grey {
+  color: #ccc; }
+
+.text-color-888 {
+  color: #888; }
+
+.text-color-grey-darken-2 {
+  color: #999999; }
+
 .text-size-big-1 {
   font-size: 1.2em; }
+
+.text-size-normal {
+  font-size: 1em; }
+
+.text-size-small-1 {
+  font-size: 0.9em; }
+
+.border-bottom-1px-grey {
+  border-bottom: 1px solid #eee; }
 
 nav {
   background: #fff;
