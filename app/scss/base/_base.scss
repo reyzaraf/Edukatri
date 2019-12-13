@@ -1,3 +1,8 @@
 * {
     font-family: $font-primary;
 }
+
+.text-color-blue-light { color: lighten($color-primary, 10%); }
+.text-color-secondary { color: $color-secondary; }
+
+.text-size-big-1 { font-size: 1.2em; }
