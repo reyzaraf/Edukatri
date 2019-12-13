@@ -20,7 +20,22 @@
   color: #999999; }
 
 .text-size-big-1 {
+  font-size: 1.1em; }
+
+.text-size-big-2 {
   font-size: 1.2em; }
+
+.text-size-big-3 {
+  font-size: 1.3em; }
+
+.text-size-big-4 {
+  font-size: 1.4em; }
+
+.text-size-big-5 {
+  font-size: 1.5em; }
+
+.text-size-big-6 {
+  font-size: 1.6em; }
 
 .text-size-normal {
   font-size: 1em; }
@@ -346,11 +361,11 @@ nav {
         #payment .payment-wrapper-outer .payment-wrapper .payment-top .payment-pipe-wrapper .payment-pipe-item.active .payment-pipe-step, #payment .payment-wrapper-outer .payment-wrapper .payment-top .payment-pipe-wrapper .payment-pipe-item.done .payment-pipe-step {
           background: #2456d1;
           color: white; }
+        #payment .payment-wrapper-outer .payment-wrapper .payment-top .payment-pipe-wrapper .payment-pipe-item.active:not(:first-of-type):before, #payment .payment-wrapper-outer .payment-wrapper .payment-top .payment-pipe-wrapper .payment-pipe-item.done:not(:first-of-type):before {
+          background: #2456d1; }
         #payment .payment-wrapper-outer .payment-wrapper .payment-top .payment-pipe-wrapper .payment-pipe-item.active .payment-pipe-text {
           color: #2456d1;
           font-weight: bold; }
-        #payment .payment-wrapper-outer .payment-wrapper .payment-top .payment-pipe-wrapper .payment-pipe-item.active:not(:first-of-type):before {
-          background: #2456d1; }
     #payment .payment-wrapper-outer .payment-wrapper .payment-bottom section {
       padding: 30px 40px; }
       #payment .payment-wrapper-outer .payment-wrapper .payment-bottom section .section-title {

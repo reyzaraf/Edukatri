@@ -81,16 +81,16 @@
                 background: $color-primary;
                 color: white;
               }
+
+              &:not(:first-of-type):before {
+                background: $color-primary;
+              }
             }
 
             &.active {
               .payment-pipe-text {
                 color: $color-primary;
                 font-weight: bold;
-              }
-
-              &:not(:first-of-type):before {
-                background: $color-primary;
               }
             }
           }
