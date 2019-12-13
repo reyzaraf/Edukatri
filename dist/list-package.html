@@ -14,24 +14,81 @@
 
     <link rel="stylesheet" type="text/css" href="assets/css/slider.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/slick.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/carousell.css">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/price-range.css">
 </head>
 
 <body>
-    <nav>
-        <div class="container d-flex justify-content-between align-items-center">
-            <div class="navbar-brand">
-                <a href="#">Edukatrip</a>
+    <nav class="navbar fixed-top navbar-expand-md">
+        <div class="container">
+            <div class="navbar-left">
+                <a class="navbar-brand" href="#">Edukatrip</a>
             </div>
-            <ul class="d-flex justify-content-between align-items-center">
-                <li class="mr-2"><a href="#" class="btn btn-outline">Become a Host</a></li>
-                <li>
-                    <a href="#" class="btn btn-white btn-icon btn-icon-left d-flex align-items-center">
-                        <i class="material-icons">local_activity</i>
-                        <span>My Trip</span>
+            <div class="navbar-right">
+                <ul class="navbar-menu">
+                    <li class="navbar-button">
+                        <a href="#">Become a Host</a>
+                    </li>
+                    <li class="navbar-link with-icon">
+                        <a href="#">
+                            <i class="material-icons">local_activity</i>
+                            <span>My Trip</span>
+                        </a>
+                    </li>
+                    <li class="navbar-link icon">
+                        <a href="#">
+                            <i class="material-icons">notifications</i>
+                        </a>
+                    </li>
+                </ul>
+                <div class="navbar-separator"></div>
+                <div class="navbar-profile">
+                    <a href="#" id="navbarProfileDropdownButton">
+                        <span class="navbar-profile-name">Ghany Razaq Arghantara</span>
+                        <span class="navbar-profile-image">
+                            <img src="./assets/img/profile-1.png" alt="">
+                        </span>
                     </a>
-                </li>
-                <li><a href="#" class="btn btn-white btn-icon d-flex align-items-center"><i class="material-icons">notifications</i></a></li>
-            </ul>
+                    <div class="navbar-profile-dropdown">
+                        <div class="navbar-profile-top">
+                            <div class="navbar-profile-progress-wrapper">
+                                <div class="navbar-profile-progress" style="width: 50%"></div>
+                            </div>
+                            <a href="#" class="navbar-profile-complete-task">
+                                <span>Complete Your Profile</span>
+                                <i class="material-icons">keyboard_arrow_right</i>
+                            </a>
+                        </div>
+                        <div class="navbar-profile-bottom">
+                            <ul class="navbar-profile-bottom-left">
+                                <li>
+                                    <a href="#">
+                                        <span>Edukatrip Points</span>
+                                        <span>854</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>My Rewards</span>
+                                        <span>2</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="navbar-profile-bottom-separator"></div>
+                            <ul class="navbar-profile-bottom-right">
+                                <li><a href="#">Profile</a></li>
+                                <li><a href="#">Wishlist</a></li>
+                                <li><a href="#">Settings</a></li>
+                                <br>
+                                <li><a href="#">Log Out</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </nav>
     <!-- <div class="container"> -->
@@ -42,28 +99,27 @@
                     <div class="row p-3">
                         <div class="col-sm-4">
                             <div>
-                                <p>namaste</p>
-                                <img src="jps.jpg" alt="">
+                                <img class="w-100" style="height: 100px;" src="assets/img/1.png" alt="">
                             </div>
-                            <div class="row">
-                                <div class="col-sm-3">
-                                    1
+                            <div class="row pt-2">
+                                <div class="col-sm-7">
+                                    <img class="w-100" style="height: 100px;" src="assets/img/1.png" alt="">
                                 </div>
-                                <div class="col-sm-9">
-                                    2
+                                <div class="col-sm-5">
+                                    <img class="w-100" style="height: 100px;" src="assets/img/1.png" alt="">
                                 </div>
                             </div>
                         </div>
                         <div class="col-sm-8">
-                            <div class="row">
+                            <div class="row text-secondary">
                                 <div class="col-sm-8">
                                     <h1><b>Educational Tour</b></h1>
                                 </div>
                                 <div class="col-sm-2">
-                                    <a href="" class="btn btn-primary">Halo</a>
+                                    <a href="" class="btn btn-outline-secondary"><span><i class="fa fa-share-alt"></i> </span> Share</a>
                                 </div>
                                 <div class="col-sm-2">
-                                    <a href="" class="btn btn-primary">Halo</a>
+                                    <a href="" class="btn btn-outline-secondary"><span><i class="fa fa-heart"></i> </span>Favorite</a>
                                 </div>
                             </div>
                             <div class="mt-3">
@@ -72,26 +128,79 @@
                             <div class="p-2 border-bottom">
                                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores mollitia iure obcaecati eos tenetur perspiciatis sunt voluptatem dolorem delectus temporibus deserunt, fugiat veniam eum nostrum, distinctio corrupti magnam quidem quas?</p>
                             </div>
-                            <div class="mt-1">
-                                <div class="row float-right ">
-                                    <div class="col-sm-4">
-                                        1
-                                    </div>
-                                    <div class="col-sm-4">
-                                        1
-                                    </div>
-                                    <div class="col-sm-4">
-                                        1
+                            <!-- <div class="mt-1"> -->
+                            <div class="row ">
+                                <div class="col-sm-5    ">
+                                    <b>Join Before Tour it ends in</b>
+                                    <div class="row">
+                                        <div class="col-sm-3">
+                                            <span class="btn btn-primary">
+                                                1
+                                            </span>
+                                            <p style="font-size: 12px;" class="text-center">day</p>
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <span class="btn btn-primary">
+                                                1
+                                            </span>
+                                            <p style="font-size: 12px;" class="text-center">Hour</p>
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <span class="btn btn-primary">
+                                                1
+                                            </span>
+                                            <p style="font-size: 12px;" class="text-center">Minute</p>
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <span class="btn btn-primary">
+                                                1
+                                            </span>
+                                            <p style="font-size: 12px;" class="text-center">Second</p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                                <div class="col-sm-4">
+                                    <b>18 people Joined</b><br>
+                                    <div class="row">
+                                        <!-- Image circle list -->
+                                        <div class="col-sm-6">
+                                            <div class="row">
+                                                <div class="col-sm-3">
+                                                    <img class="rounded-circle" style="width: 35px;height: 35px;" src="assets/img/4035.jpg" alt="">
+                                                </div>
+                                                <div class="col-sm-3">
+                                                    <img class="rounded-circle" style="width: 35px;height: 35px;" src="assets/img/4035.jpg" alt="">
+                                                </div>
+                                                <div class="col-sm-3">
+                                                    <img class="rounded-circle" style="width: 35px;height: 35px;" src="assets/img/4035.jpg" alt="">
+                                                </div>
+                                            </div><br>
+                                            <p class="text-danger">hurry up, only for 5 seats left</p>
+                                        </div>
 
+                                        <!-- Image circle list -->
+                                        <div class="col-sm-6">
+                                            <p><b>18</b> / 32 </p>
+                                            <div>
+                                                <img src="" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <p class="mt-4 "><b class="text-danger">Rp.630.000</b> per person</p>
+                                    <a class="btn btn-danger w-100" href="#">Join tour</a>
+                                    <a class="text-primary float-right" href="#">see details</a>
+                                </div>
+                            </div>
                         </div>
 
                     </div>
+
                 </div>
             </div>
         </div>
+    </div>
     </div>
 
 </body>

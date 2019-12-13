@@ -4,7 +4,7 @@
     <head>
         <title>Bootstrap Example</title>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap" rel="stylesheet">
 
         <link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
@@ -13,11 +13,16 @@
 
         <link rel="stylesheet" type="text/css" href="assets/css/slider.css">
         <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/slick.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/carousell.css">
+
+        <link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/price-range.css">
 
     </head>
 
     <body>
-        <nav class="navbar">
+        <nav class="navbar fixed-top navbar-expand-md">
             <div class="container">
                 <div class="navbar-left">
                     <a class="navbar-brand" href="#">Edukatrip</a>
@@ -128,7 +133,7 @@
                 </div>
                 <!--/col-3-->
                 <div class="col-sm-9">
-                    <h3><b> Welcome to Edukatrip </b></h3>
+                    <h3><b> </b></h3>
                     <div class="card">
                         <ul class="nav nav-tabs p-3">
                             <li class="active"><a data-toggle="tab" href="#home">Profile</a></li>
@@ -142,65 +147,70 @@
                                     <form class="form" action="##" method="post" id="registrationForm">
                                         <div class="form-group">
                                             <h4>Complete your profile (1/3)</h4>
-                                            <form>
-                                                <div class="form-row">
-                                                    <div class="col-sm-5">
+                                            <div class="form-row">
+                                                <form action="" method="">
+                                                    <div class="col-sm-4">
                                                         <label for="">Fullname</label>
                                                         <input type="text" class="form-control" placeholder="Full name">
 
                                                     </div>
-                                                    <div class="col">
+                                                    <div class="col-sm-1 pt-2"><br>
+                                                        <input type="submit" name="submit" id="">
+                                                    </div>
+                                                </form>
+                                                <form action="">
+                                                    <div class="col-sm-12">
                                                         <label for="">Phone Number</label>
 
                                                         <input type="text" class="form-control" placeholder="PHone number">
                                                     </div>
-                                                </div>
-                                            </form>
-
-                                        </div>
-                                </div>
-                                <hr>
-                                <div class="form-group">
-                                    <div class="row">
-                                        <div class="col-sm-5">
-                                            <img class="w-25 float-left rounded-circle" src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" alt="">
-                                            <span class="p-4 mt-2" style="font-size: 20px;">Edukatripper </span>
-                                            <br><br><br><br>
-                                            <div class="text-dark">
-                                                <div class="float-left">Birth Date </div>
-                                                <div class="text-right"><b>09 Juni 2000</b></div>
                                             </div>
-                                            <br>
-                                            <div class="text-dark">
-                                                <div class="float-left">Gender </div>
-                                                <div class="text-right"><b>Male</b></div>
-                                            </div>
-                                            <br>
-                                            <button type="submit" class="btn btn-primary w-100">Change Password</button>
-                                        </div>
-                                        <div class="col-sm-7 border-left">
-                                            <h5>Contact</h5><br>
-                                            <div class="row">
-                                                <p class="col-sm-4">Email</p><span class="col-sm-5">rere@gmail.com<i class="ml-2 fa fa-user"></i></span><span><a class="col-3" href="">edit <i class="fa fa-pencil"></i></a></span>
-                                            </div>
-                                            <div class="row">
-                                                <p class="col-sm-4">Phone number</p><span class="col-sm-5">013123125412 <i class="ml-2 fa fa-user"></i></span><span><a class="col-3" href="">edit <i class="fa fa-pencil"></i></a></span>
-                                            </div>
-
-                                        </div>
-                                    </div>
                                     </form>
+
                                 </div>
-
                             </div>
-                            <!--/tab-pane-->
-                        </div>
-                        <!--/tab-content-->
-                    </div>
+                            <hr>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-sm-5">
+                                        <img class="w-25 float-left rounded-circle" src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" alt="">
+                                        <span class="p-4 mt-2" style="font-size: 20px;">Edukatripper </span>
+                                        <br><br><br><br>
+                                        <div class="text-dark">
+                                            <div class="float-left">Birth Date </div>
+                                            <div class="text-right"><b>09 Juni 2000</b></div>
+                                        </div>
+                                        <br>
+                                        <div class="text-dark">
+                                            <div class="float-left">Gender </div>
+                                            <div class="text-right"><b>Male</b></div>
+                                        </div>
+                                        <br>
+                                        <button type="submit" class="btn btn-primary w-100">Change Password</button>
+                                    </div>
+                                    <div class="col-sm-7 border-left">
+                                        <h5>Contact</h5><br>
+                                        <div class="row">
+                                            <p class="col-sm-4">Email</p><span class="col-sm-5">rere@gmail.com<i class="ml-2 fa fa-user"></i></span><span><a class="col-3" href="">edit <i class="fa fa-pencil"></i></a></span>
+                                        </div>
+                                        <div class="row">
+                                            <p class="col-sm-4">Phone number</p><span class="col-sm-5">013123125412 <i class="ml-2 fa fa-user"></i></span><span><a class="col-3" href="">edit <i class="fa fa-pencil"></i></a></span>
+                                        </div>
 
+                                    </div>
+                                </div>
+                                </form>
+                            </div>
+
+                        </div>
+                        <!--/tab-pane-->
+                    </div>
+                    <!--/tab-content-->
                 </div>
+
             </div>
-            <!--/col-9-->
+        </div>
+        <!--/col-9-->
         </div>
         <!--/row-->
 
