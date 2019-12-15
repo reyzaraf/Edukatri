@@ -437,6 +437,10 @@ footer {
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   border-radius: 10px; }
 
+#pageHome section.educational-tour .title {
+  font-size: 2em;
+  font-family: "Baloo", cursive; }
+
 .opaque-navbar .container .navbar-header > a {
   color: #fff;
   text-transform: uppercase;

@@ -75,6 +75,13 @@
         box-shadow: 0 0 10px transparentize(black, 0.8);
         border-radius: 10px;
     }
+
+    section.educational-tour {
+        .title {
+            font-size: 2em;
+            font-family: $font-secondary;
+        }
+    }
 }
 
 
