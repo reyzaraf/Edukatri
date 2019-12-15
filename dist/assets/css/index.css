@@ -1,5 +1,5 @@
 body,html{
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
 }
 
 section{
@@ -19,14 +19,14 @@ section{
   color:#fff;
   font-size:80px;
   font-weight:700;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
  }
 .banner p{
   text-align:center;
   color:#fff;
   font-size:1.3em;
   opacity:1;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
   
 }
 .opaque-navbar .container .navbar-header >a{

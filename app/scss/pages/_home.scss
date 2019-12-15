@@ -1,0 +1,220 @@
+#pageHome {
+    nav {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: transparent;
+        box-shadow: none;
+        .nav-wrapper {
+            padding: 10px 0;
+            @include my-flex(row, center, space-between);
+            
+            .logo {
+                color: white;
+                font-size: 1.5em;
+                font-weight: bold;
+            }
+            
+            .nav-menu {
+                padding: 0;
+                margin: 0;
+                list-style: none;
+                @include my-flex(row, center, center);
+
+                li {
+                    a {
+                        color: white;
+                        padding: 10px 20px;
+                        border: 1px solid white;
+                        margin-left: 10px;
+                        border-radius: 5px;
+                        text-decoration: none;
+                        font-family: $font-primary;
+                        transition: all 200ms ease;
+
+                        &:hover {
+                            background: transparentize(white, 0.8);
+                        }
+
+                        &.fill {
+                            background: white;
+                            color: #333;
+
+                            &:hover {
+                                background: darken(white, 5%);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+    .banner {
+        width: 100%;
+        background: url('https://images.unsplash.com/photo-1527750580681-bb9475d76cd2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80') no-repeat;
+        background-size: cover;
+        background-position: center;
+        min-height: 600px;
+        @include my-flex(row, center, center);
+    
+        .banner-text {
+            text-align: center;
+            color: #fff;
+            font-size: 3.3em;
+            font-family: $font-secondary;
+        }
+    }
+
+    .banner-form {
+        background: white;
+        padding: 30px 50px;
+        transform: translateY(-50%);
+        box-shadow: 0 0 10px transparentize(black, 0.8);
+        border-radius: 10px;
+    }
+}
+
+
+
+
+
+// =============================
+// DIVIDER
+// =============================
+
+.opaque-navbar .container .navbar-header>a {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.opaque-navbar .container .navbar-collapse>ul>li>a {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.opaque-navbar {
+    background-color: rgba(255, 255, 255, 0);
+    border-bottom: 0px solid #eee;
+
+    transition: background-color 0.5s ease 0s;
+}
+
+.opaque-navbar.opaque {
+    background-color: black;
+    border: 0px;
+    transition: background-color .5s ease 0s;
+}
+
+ul.dropdown-menu {
+    background-color: black;
+}
+
+.abt {
+    text-align: center;
+}
+
+.abt .jumbotron {
+    background-color: #e67e22;
+}
+
+.abt h3 {
+
+    color: white;
+    font-size: 40px;
+
+}
+
+hr {
+    width: 100px;
+    border-width: 3px;
+
+}
+
+.abt p {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 20px;
+}
+
+.btn-default {
+    padding-bottom: 15px;
+    padding-top: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.no-padding {
+    padding: 0;
+    margin-top: -30px;
+}
+
+.col-6 {
+    padding: 0 0;
+}
+
+.no-padding h1 {
+    padding-top: 55px;
+    text-transform: uppercase;
+}
+
+.no-padding hr {
+    border: 2px solid #d0d0d0;
+}
+
+.bg-dark {
+    background-color: #222222;
+    color: white;
+}
+
+.primary {
+    border: 1px solid #d35400;
+}
+
+.my-font {
+    font-size: 20px;
+
+}
+
+.bg-dark {
+    padding-top: 55px;
+    padding-bottom: 30px;
+}
+
+.padded {
+    padding-top: 200px;
+}
+
+.padded .col-lg-4 a {
+    color: #d35400;
+    font-weight: bold;
+}
+
+.list-icon {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.list-icon li {
+    display: inline;
+    padding-right: 20px;
+}
+
+.list-icon .fa {
+    font-size: 40px;
+}
+
+@media (max-width: 992px) {
+    body {
+        background: white;
+    }
+
+    .opaque-navbar {
+        background-color: black;
+        height: 60px;
+        transition: background-color .5s ease 0s;
+    }
+}
