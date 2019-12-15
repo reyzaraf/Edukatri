@@ -3,105 +3,153 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Home</title>
-    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap" rel="stylesheet">
+    <title>Transparent Navigation</title>
 
-    <link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="assets/css/index.css">
 
-    <link rel="stylesheet" type="text/css" href="assets/css/slider.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/slick.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/carousell.css">
-
-    <link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/price-range.css">
 </head>
 
 <body>
-    <nav class="navbar fixed-top navbar-expand-md">
+    <!-- partial:index.partial.html -->
+    <div class="navbar  navbar-fixed-top opaque-navbar">
         <div class="container">
-            <div class="navbar-left">
-                <a class="navbar-brand" href="#">Edukatrip</a>
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNav">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#">Edukatrip</a>
             </div>
-            <div class="navbar-right">
-                <ul class="navbar-menu">
-                    <li class="navbar-button">
-                        <a href="#">Become a Host</a>
-                    </li>
-                    <li class="navbar-link with-icon">
-                        <a href="#">
-                            <i class="material-icons">local_activity</i>
-                            <span>My Trip</span>
-                        </a>
-                    </li>
-                    <li class="navbar-link icon">
-                        <a href="#">
-                            <i class="material-icons">notifications</i>
-                        </a>
-                    </li>
+            <div class="collapse navbar-collapse" id="myNav">
+                <ul class=" nav navbar-nav pull-right">
+                    <li style="border:1px solid white;border-radius:12px;"><a href="#contact" class="page-scroll">Become Host</a></li>
+                    <li style="border:1px solid white;border-radius:12px;"><a href="#portfolio" class="page-scroll">Login</a></li>
+                    <li style="border:1px solid black;border-radius:12px;background-color:white;"><a style="color: #000;" href="#contact" class="page-scroll">Register</a></li>
                 </ul>
-                <div class="navbar-separator"></div>
-                <div class="navbar-profile">
-                    <a href="#" id="navbarProfileDropdownButton">
-                        <span class="navbar-profile-name">Ghany Razaq Arghantara</span>
-                        <span class="navbar-profile-image">
-                            <img src="./assets/img/profile-1.png" alt="">
-                        </span>
-                    </a>
-                    <div class="navbar-profile-dropdown">
-                        <div class="navbar-profile-top">
-                            <div class="navbar-profile-progress-wrapper">
-                                <div class="navbar-profile-progress" style="width: 50%"></div>
-                            </div>
-                            <a href="#" class="navbar-profile-complete-task">
-                                <span>Complete Your Profile</span>
-                                <i class="material-icons">keyboard_arrow_right</i>
-                            </a>
+            </div>
+        </div>
+    </div>
+    <section class="banner">
+        <div class="container">
+            <h3>Book Tour Package For</h3>
+            <p>Educational & Leisure Experience <br /> </p>
+        </div>
+    </section>
+    <div class="">
+        <div class="card ">
+            <div class="row">
+                <div class="container">
+                    <form action="">
+                        <div class="col-sm-4">
+                            <h4><b>Where do you want to go ?</b></h4>
+                            <input type="text" class="form-control" placeholder="try bandung">
+
                         </div>
-                        <div class="navbar-profile-bottom">
-                            <ul class="navbar-profile-bottom-left">
-                                <li>
-                                    <a href="#">
-                                        <span>Edukatrip Points</span>
-                                        <span>854</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <span>My Rewards</span>
-                                        <span>2</span>
-                                    </a>
-                                </li>
-                            </ul>
-                            <div class="navbar-profile-bottom-separator"></div>
-                            <ul class="navbar-profile-bottom-right">
-                                <li><a href="#">Profile</a></li>
-                                <li><a href="#">Wishlist</a></li>
-                                <li><a href="#">Settings</a></li>
-                                <br>
-                                <li><a href="#">Log Out</a></li>
-                            </ul>
+                        <div class="col-sm-4">
+                            <h4><b>What kind of tour ?</b></h4>
+                            <select class="form-control" name="" id="">
+                                <option value="">Choose tour tipe</option>
+                                <option value="">City</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-3">
+                            <br><br>
+                            <input type="submit" value="search tour" class="p-5 w-100 btn btn-primary">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!--End ofAbout-->
+
+    <!--Educational TOur-->
+    <div class="row">
+        <div class="col-sm-6 ">
+            <h2 class="text-light"><b>Educational Tour</b></h2>
+            <img src="assets/img/1.png" class="w-100" style="height: 350px;" alt="">
+        </div>
+        <div class="col-sm-6">
+            <br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias et ut quia, quod laudantium alias nihil quam! Dignissimos sunt sequi ipsam magni facilis, officiis praesentium, quas commodi aut assumenda numquam.</p>
+            <div class="row">
+                <div class="col-sm-6 ">
+                    <img src="assets/img/1.png" style="height: 150px;w-100" alt="">
+                </div>
+                <div class="col-sm-6 ">
+                    <img src="assets/img/1.png" style="height: 150px;w-100" alt="">
+                </div>
+                <div class="col-sm-6 ">
+                    <img src="assets/img/1.png" style="height: 150px;w-100" alt="">
+                </div>
+                <div class="col-sm-6 ">
+                    <br><br>
+                    <a class="btn btn-primary" href=""> More educational tour </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End of educational tour-->
+
+    <div class="contact" id="contact">
+        <div class="bg-dark">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2 text-center">
+                        <h1>Let's Get In Touch!</h2>
+                            <hr class="primary">
+                            </hr>
+                            <p class="my-font">Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
+                    </div>
+                    <div class="padded">
+                        <div class="col-lg-4 col-lg-offset-2 text-center">
+                            <i class="fa fa-phone fa-3x sr-contact"></i>
+                            <p>9999999999</p>
+                        </div>
+
+                        <div class="col-lg-4 text-center">
+                            <i class="fa fa-envelope-o fa-3x sr-contact"></i>
+                            <p><a href="mailto:your-email@your-domain.com">gfgfgfg@gmail.com</a></p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </nav>
+    </div>
+    <!--End Of Contact-->
 
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 text-center">
+                    <h3>About this Page</h3>
+                    <p>Used:Bootstrap,Jquery,HTML,CSS.<br />
+                        Made By: Manas Yadav</p>
 
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-    <script src="assets/bootstrap/js/jquery.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src='https://github.com/mattbryson/TouchSwipe-Jquery-Plugin/blob/master/jquery.touchSwipe.min.js'></script>
-    <script src="assets/js/slider.js"></script>
-    <script src="assets/js/app.js"></script>
-    <script src="assets/js/slick.js"></script>
+                </div>
+                <div class="col-sm-6 text-center">
+                    <h3>Around The Web</h3>
+                    <ul class="list-icon">
+                        <li><a type="button" href="https://www.facebook.com/manas.yadav.71"><i class="fa fa-facebook-official"></i></a>
+                        <li><a type="button" href="https://github.com/manas2297"><i class="fa fa-github-square" aria-hidden="true"></i></a>
+                        <li><a type="button" href=""><i class="fa fa-google-plus-official" aria-hidden="true"></i></a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- partial -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js'></script>
+    <script src="assets/js/index.js"></script>
 
 </body>
 
