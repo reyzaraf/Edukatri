@@ -14,10 +14,15 @@
 
     <link rel="stylesheet" type="text/css" href="assets/css/slider.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/slick.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/carousell.css">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/price-range.css">
 </head>
 
 <body>
-    <nav class="navbar">
+    <nav class="navbar fixed-top navbar-expand-md">
         <div class="container">
             <div class="navbar-left">
                 <a class="navbar-brand" href="#">Edukatrip</a>
@@ -89,7 +94,7 @@
 
 
     <div id="payment">
-        <div class="container">
+        <div class="container co-sm-12">
             <div class="payment-background"></div>
             <div class="payment-wrapper-outer">
                 <div class="payment-page-title">Review your booking</div>
@@ -115,86 +120,100 @@
                         </div>
                     </div>
                     <div class="payment-bottom row m-0">
-                        <div class="payment-bottom-left col-6 p-0">
+                        <div class="payment-bottom-left col-sm-6 p-0">
                             <section>
                                 <h5 class="section-title"><strong>Yogyakarta Tour</strong></h5>
                                 <div class="row m-0">
-                                    <div class="col-5 p-0">Date of Tour</div>
-                                    <div class="col-7 p-0 font-weight-bold">Minggu, 12 Juni 2019</div>
+                                    <div class="col-sm-5 p-0">Date of Tour</div>
+                                    <div class="col-sm-7 p-0 font-weight-bold">Minggu, 12 Juni 2019</div>
                                 </div>
                                 <div class="row m-0">
-                                    <div class="col-5 p-0">Tour Guide</div>
-                                    <div class="col-7 p-0 font-weight-bold">Tour Guide A</div>
+                                    <div class="col-sm-5 p-0">Tour Guide</div>
+                                    <div class="col-sm-7 p-0 font-weight-bold">Tour Guide A</div>
                                 </div>
                                 <div class="row m-0">
-                                    <div class="col-5 p-0">Total Person</div>
-                                    <div class="col-7 p-0 font-weight-bold">4</div>
+                                    <div class="col-sm-5 p-0">Total Person</div>
+                                    <div class="col-sm-7 p-0 font-weight-bold">4</div>
                                 </div>
                             </section>
                             <section>
                                 <h5 class="section-title"><strong>Price Details</strong></h5>
                                 <div class="row m-0 ">
-                                    <div class="col-6 p-0">Tour Cost</div>
-                                    <div class="col-6 p-0 text-right text-color-blue-light">Rp.436.000</div>
+                                    <<<<<<< HEAD:app/html/payment.html <div class="col-sm-6 p-0">Tour Cost
                                 </div>
-                                <div class="row m-0">
-                                    <div class="col-6 p-0">Tax</div>
-                                    <div class="col-6 p-0 text-right text-color-blue-light">Included</div>
+                                <div class="col-sm-6 p-0 text-right">Rp.436.000</div>
+                        </div>
+                        <div class="row m-0">
+                            <div class="col-sm-6 p-0">Tax</div>
+                            <div class="col-sm-6 p-0 text-right">Included</div>
+                        </div>
+                        <div class="row m-0">
+                            <div class="col-sm-6 p-0">Total</div>
+                            <div class="col-sm-6 p-0 text-right">Rp.110.000</div>
+                            =======
+                            <div class="col-6 p-0">Tour Cost</div>
+                            <div class="col-6 p-0 text-right text-color-blue-light">Rp.436.000</div>
+                        </div>
+                        <div class="row m-0">
+                            <div class="col-6 p-0">Tax</div>
+                            <div class="col-6 p-0 text-right text-color-blue-light">Included</div>
+                        </div>
+                        <div class="row m-0 align-items-center">
+                            <div class="col-6 p-0">Total</div>
+                            <div class="col-6 p-0 text-right text-color-secondary text-size-big-1 font-weight-bold">Rp.110.000</div>
+                            >>>>>>> 50e171f64d7d8ab8df7a2aab1bf35a3b3677e0d2:app/html/payment-1.html
+                        </div>
+                        </section>
+                        <section>
+                            <div class="row">
+                                <div class="col-sm-6">Cancellation Policy Applies</div>
+                                <div class="col-sm-6 text-right">
+                                    <a href="#">See Details</a>
                                 </div>
-                                <div class="row m-0 align-items-center">
-                                    <div class="col-6 p-0">Total</div>
-                                    <div class="col-6 p-0 text-right text-color-secondary text-size-big-1 font-weight-bold">Rp.110.000</div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="payment-bottom-right col-sm-6 p-0">
+                        <section>
+                            <h5 class="section-title"><strong>Customer Data</strong></h5>
+                            <form action="#">
+                                <div class="row mb-3">
+                                    <div class="input-group col-6 d-flex align-items-center">
+                                        <input type="radio" id="one" class="mr-2">
+                                        <label for="one" class="m-0">Book for Myself</label>
+                                    </div>
+                                    <div class="input-group col-6 d-flex align-items-center">
+                                        <input type="radio" id="two" class="mr-2">
+                                        <label for="two" class="m-0">Book for Other</label>
+                                    </div>
                                 </div>
-                            </section>
-                            <section>
                                 <div class="row">
-                                    <div class="col-6">Cancellation Policy Applies</div>
-                                    <div class="col-6 text-right">
-                                        <a href="#">See Details</a>
+                                    <div class="form-group col">
+                                        <label for="two" class="m-0">Name</label>
+                                        <input type="input" class="form-control">
                                     </div>
                                 </div>
-                            </section>
-                        </div>
-                        <div class="payment-bottom-right col-6 p-0">
-                            <section>
-                                <h5 class="section-title"><strong>Customer Data</strong></h5>
-                                <form action="#">
-                                    <div class="row mb-3">
-                                        <div class="input-group col-6 d-flex align-items-center">
-                                            <input type="radio" id="one" class="mr-2">
-                                            <label for="one" class="m-0">Book for Myself</label>
-                                        </div>
-                                        <div class="input-group col-6 d-flex align-items-center">
-                                            <input type="radio" id="two" class="mr-2">
-                                            <label for="two" class="m-0">Book for Other</label>
-                                        </div>
+                                <div class="row">
+                                    <div class="form-group col">
+                                        <label for="two" class="m-0">Identity ID (KTP / Passport)</label>
+                                        <input type="input" class="form-control">
                                     </div>
-                                    <div class="row">
-                                        <div class="form-group col">
-                                            <label for="two" class="m-0">Name</label>
-                                            <input type="input" class="form-control">
-                                        </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 d-flex justify-content-end">
+                                        <button type="submit" class="btn btn-primary">Choose Payment Method</button>
                                     </div>
-                                    <div class="row">
-                                        <div class="form-group col">
-                                            <label for="two" class="m-0">Identity ID (KTP / Passport)</label>
-                                            <input type="input" class="form-control">
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-12 d-flex justify-content-end">
-                                            <button type="submit" class="btn btn-primary">Choose Payment Method</button>
-                                        </div>
-                                    </div>
-                                </form>
-                            </section>
-                        </div>
+                                </div>
+                            </form>
+                        </section>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    </div>
 
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
     <script src="assets/bootstrap/js/jquery.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -202,6 +221,8 @@
     <script src='https://github.com/mattbryson/TouchSwipe-Jquery-Plugin/blob/master/jquery.touchSwipe.min.js'></script>
     <script src="assets/js/slider.js"></script>
     <script src="assets/js/app.js"></script>
+    <script src="assets/js/slick.js"></script>
+
 </body>
 
 </html>

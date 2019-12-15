@@ -9,29 +9,6 @@
 </head>
 <body>
 
-        <nav style="background:#f7f7f7!important;box-shadow: 0 2px 4px -1px rgba(0,0,0,0.25)!important;padding:15px;" class="navbar navbar-expand-md bg-white mb-4">
-          <div class="container">
-            <a class="navbar-brand text-orange" href="#"> Edukatrip </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div style="padding-left: 100px;;position:static;" class="collapse navbar-collapse btn-sect" id="navbarCollapse">
-              
-                  <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                      <a class="nav-link" href="#">Travel History </a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">My Booking <span class="sr-only">(current)</span></a>
-                    </li>
-                  </ul>
-                  <form class="form-inline mt-2 mt-md-0">
-                    <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                  </form>
-                </div>
-              </div>
-              </nav>
               <div style="z-index: -1;position: relative;top: -150px;background:#0099ff;">
                   <div style="z-index: -1;position: relative;top: 200px;">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,192L48,176C96,160,192,128,288,138.7C384,149,480,203,576,213.3C672,224,768,192,864,170.7C960,149,1056,139,1152,149.3C1248,160,1344,192,1392,208L1440,224L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
@@ -41,58 +18,14 @@
                 <div class="content">
                     <h3 class="text-white">Find your best  Educational tour package</h3><br>
                     <div class="row">
-                      <div class="col-md-3 col-m-lg-xl-3">
-                          <!-- <div class="card">
-                              <div class="row justify-content-center">
-                                  <div class="col-6">
-                                   <b>Educational tour </b> 
-                                  </div>
-                                  <div class="col-md4 btn-show">
-                                      <a href="#">Show All</a>
-                                    </div>
-                                  </div>
-                                  <div class="col-md-12 col-sm-d-lg-xl-3">
-                                      <div class="row justify-content-center">
-                                        <div class="col-6">
-                                            <div class="form-check">
-                                                <input class="radio-btn form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                                                <label class="form-check-label" for="exampleRadios1">
-                                                  Default radio
-                                                </label>
-                                          </div>
-                                      </div>
-                                      <div class="col-6">
-                                          <div class="form-check">
-                                              <input class="radio-btn form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                                              <label class="form-check-label" for="exampleRadios1">
-                                                Default radio
-                                              </label>
-                                        </div>
-                                    </div>
-                                    <div class="col-6">
-                                        <div class="form-check">
-                                            <input class="radio-btn form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                                            <label class="form-check-label" for="exampleRadios1">
-                                              Default radio
-                                            </label>
-                                      </div>
-                                  </div>
-                                  <div class="col-6">
-                                      <div class="form-check">
-                                          <input class="radio-btn form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                                          <label class="form-check-label" for="exampleRadios1">
-                                            Default radio
-                                          </label>
-                                    </div>
-                                </div>
-                                  </div>
-                            </div>
+                      
+                            
 
                             
     
                             
-                          </div><br> -->
-                          <div class="card" style="width: 21rem;">
+                          </div><br>
+                          <div class="card col-sm-4">
                               <div class="card-body">
                                 <h5 class="card-title">Educational Tour</h5>
                                   <div class="form-check">
@@ -104,28 +37,28 @@
                                   </div>
                               </div>
                             </div><br>
-                          <div class="card" style="width: 21rem;">
+                          <div class="card col-sm-4" >
                             <div class="card-body">
                               <div class="row justify-content-center">
-                                <div class="col-md-6 col-sm-md-lg-l-3">
+                                <div class="col-sm-6">
                                 <b>Filter Result</b>
                                 </div>
-                                <div class="col-4 btn-show">
+                                <div class="col-sm-4 btn-show">
                                     <a href="#">Reset Filter</a>
                                 </div><br><br>
-                                <div class="col-6">
+                                <div class="col-sm-6">
                                 <b>Price Range</b>
                                 </div>
-                                <div class="col-4 btn-show"></div>
+                                <div class="col-sm-4 btn-show"></div>
                             </div>
-                            <div class="col-12">
+                            <div class="col-sm-12">
                                 <div class="input-group">
                                     <input class="price-range js-input-from" type="text" aria-label="First name" class="form-control" placeholder="Rp.0">
                                     <hr>
                                     <input class="price-range js-input-to" type="text" aria-label="First name" class="form-control" placeholder="Rp.10.000.000">
                                 </div>
                             </div>
-                            <div class="col-12">
+                            <div class="col-sm-12">
                                 <div class="wrapper" style="padding:20px;">
                                     <div class="range-slider">
                                         <input type="text" class="js-range-slider" value="" />
@@ -134,9 +67,9 @@
                                     </div>
                             </div>
                             <!-- Date Picker Section -->
-                            <div class="col-12">
+                            <div class="col-sm-12">
                             <div class="row">
-                                <div class="col-6">
+                                <div class="col-sm-6">
                                     <div class="date-from">
                                         <div class="date-title">
                                         <b>From</b>
@@ -176,12 +109,12 @@
                                 <a href="#" class="btn btn-outline-primary">Find Now</a>
                               </div>
                             </div><br>
-
+                </div>
                       <!-- END ROW LEFT SECTION -->
                         </div>
-                      <div class="col-9 result">
+                      <div class="col-sm-6">
                         <div class="trip-section">
-                            <div class="tour-search">
+                            <div class="">
 
                                       <div class="form-group has-search">
                                           <span class="fa fa-search form-control-feedback"></span>
@@ -194,7 +127,7 @@
                               <div class="tour-list">
                                 <h4 class="text-white">Best Rated Educational Tour</h4><br><br>
                                 <div class="tour-card">
-                                  <div class="card mb-4 col-md-5" style="max-width: 760px;">
+                                  <div class="card col-sm-4" style="max-width: 760px;">
                                     <div class="row no-gutters">
                                       <div class="col-md-4">
                                         <img src="assets/1.PNG" class="card-img" alt="...">

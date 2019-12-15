@@ -2378,7 +2378,7 @@ var $range = $(".js-range-slider"),
     $inputTo = $(".js-input-to"),
     instance,
     min = 0,
-    max = 1000000000,
+    max = 100000000,
     from = 0,
     to = 0;
 

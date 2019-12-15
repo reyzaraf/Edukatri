@@ -14,7 +14,27 @@
 
       <link rel="stylesheet" type="text/css" href="assets/css/slider.css">
       <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+      <link rel="stylesheet" type="text/css" href="assets/css/slick.css">
+      <link rel="stylesheet" type="text/css" href="assets/css/carousell.css">
+
+      <link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css">
+      <link rel="stylesheet" type="text/css" href="assets/css/price-range.css">
   </head>
+  <style id="jsbin-css">
+      .modal-body div p {
+          overflow: hidden;
+      }
+
+      .first-content {
+          width: 100%;
+          float: left;
+      }
+
+      .second-content {
+          width: 100%;
+          float: right;
+      }
+  </style>
 
   <body>
       <!-- <div style="z-index: -1;position: relative;top: -230px;">
@@ -22,7 +42,7 @@
                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,192L48,176C96,160,192,128,288,138.7C384,149,480,203,576,213.3C672,224,768,192,864,170.7C960,149,1056,139,1152,149.3C1248,160,1344,192,1392,208L1440,224L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
                     </div>
                   </div> -->
-      <nav class="navbar">
+      <nav class="navbar fixed-top navbar-expand-md">
           <div class="container">
               <div class="navbar-left">
                   <a class="navbar-brand" href="#">Edukatrip</a>
@@ -101,8 +121,8 @@
               <ul>
                   <li>
                       <div class="row">
-                          <div class="col-sm">
-                              <img class="col-12" src="https://www.gfa-cert.com/wp-content/uploads/2016/12/xfsc_pefc.jpg.pagespeed.ic.83UsABsHqi.webp" style="height: 100%;border-radius:10px;border:1px solid black;background-size:cover;" alt="">
+                          <div class="col-sm-5">
+                              <img class="col-sm-12" src="https://www.gfa-cert.com/wp-content/uploads/2016/12/xfsc_pefc.jpg.pagespeed.ic.83UsABsHqi.webp" style="height: 100%;border-radius:10px;border:1px solid black;background-size:cover;" alt="">
                           </div>
                           <div class="col-sm ml-4 pl-1 text-justify">
                               <p>09.30 - 12.00 </p>
@@ -116,13 +136,14 @@
                   </li>
                   <li>
                       <div class="row">
-                          <div class="col-sm ">
+                          <div class="col-sm-5">
+
                               <div class="mainflip">
                                   <div class="frontside">
                                       <div class="card new-tour">
                                           <div class="w-100 card-body text-center">
                                               <!-- <p><img class=" img-fluid" src="https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_01.png" alt="card image"></p> -->
-                                              <a class="btn btn-white" href="#"><i class="btn btn-primary rounded-circle fa fa-plus"></i>
+                                              <a class="btn btn-white" data-toggle="modal" data-target="#myModal"><i class="btn btn-primary rounded-circle fa fa-plus"></i>
                                                   <h1 class="card-title"><span class="w-50"> Add More </span></h1>
                                                   <h1 class="card-title"><span class="w-50"> Destination </span></h1>
                                               </a>
@@ -132,6 +153,117 @@
                               </div>
 
                           </div>
+                          <div id="myModal" class="modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                              <div class="modal-dialog modal-lg">
+                                  <!-- Modal content-->
+                                  <div class="modal-content ">
+                                      <div class="modal-header">
+                                          <h5 class="float-left modal-title"><b>Choose Next Destination</b></h5>
+                                          <select class="form-control w-25 float-right ml-5" name="" id="">
+                                              <option value=""><i class="fa fa-sort-amount-down"> </i> Sort By</option>
+                                          </select>
+                                          <div class="form-control w-50 ml-2">
+                                              <i class="fa fa-search"></i>
+                                              <input type="text" style="border:0px;" placeholder="Find Destination">
+                                          </div>
+                                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+                                      </div>
+                                      <div class="modal-body">
+                                          <div class="row">
+                                              <div class="col-sm-3">
+                                                  <img class="w-100" style="height: 150px;" src="assets/img/1.png" alt="">
+                                              </div>
+                                              <div class="col-sm-9">
+                                                  <h5><b>Floating market</b></h5>
+                                                  <p> <b>30 Min Travel Time</b> From Farm house</p>
+                                                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est nulla reprehenderit repellat debitis ratione excepturi maiores natus quidem maxime veritatis dolores nemo nam doloremque, officiis quis eos dolorem quasi voluptatem.</p>
+                                                  <div class="row">
+                                                      <div class="col-sm-6">
+                                                          <p><b class="text-danger">Rp. 130.000</b> Per Person</p>
+                                                      </div>
+                                                      <div class="col-sm-6">
+                                                          <a href="#myModal1" role="button" class="float-right btn btn-outline-primary" data-toggle="modal">Choose Destination</a>
+
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+
+                                  </div>
+                              </div>
+                          </div>
+
+                          <div id="myModal1" class="modal modal-child" data-backdrop-limit="1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-modal-parent="#myModal">
+                              <div class="modal-dialog modal-lg">
+                                  <!-- Modal content-->
+                                  <div class="modal-content">
+                                      <div class="modal-header">
+                                          <h4 class="modal-title float-left"><b>Floating Market</b></h4>
+                                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+                                      </div>
+                                      <div class="modal-body">
+                                          <div class="row">
+                                              <div class="col-sm-4">
+                                                  <img class="w-100" style="height: 150px;" src="assets/img/1.png" alt="">
+                                                  <b>30 Min travel time</b>
+                                                  <p>From Farm House Lembang</p>
+                                              </div>
+                                              <div class="col-sm-8">
+                                                  <div class="row">
+                                                      <div class="col-sm-6">
+                                                          <p>Start Time</p>
+                                                          <div class="row">
+                                                              <div class="col-sm-6">
+                                                                  <select class="form-control" name="" id="">
+                                                                      <option value="">12</option>
+                                                                      <option value="">11</option>
+                                                                  </select>
+                                                              </div>
+                                                              <div class="col-sm-6">
+                                                                  <select class="form-control" name="" id="">
+                                                                      <option value="">12</option>
+                                                                      <option value="">11</option>
+                                                                  </select>
+                                                              </div>
+                                                          </div>
+                                                      </div>
+                                                      <div class="col-sm-6">
+                                                          <p>End Time</p>
+                                                          <div class="row">
+                                                              <div class="col-sm-6">
+                                                                  <select class="form-control" name="" id="">
+                                                                      <option value="">12</option>
+                                                                      <option value="">11</option>
+                                                                  </select>
+                                                              </div>
+                                                              <div class="col-sm-6">
+                                                                  <select class="form-control" name="" id="">
+                                                                      <option value="">12</option>
+                                                                      <option value="">11</option>
+                                                                  </select>
+                                                              </div>
+                                                          </div>
+                                                      </div>
+
+                                                  </div>
+                                                  <div>
+                                                      <p>Note</p>
+                                                      <textarea class="form-control" name="" id="" cols="10" rows="6"></textarea>
+                                                      <br>
+                                                      <input type="text" class="float-right btn btn-primary" value="Add to Timeline">
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+
+                                  </div>
+                              </div>
+                          </div>
+
+
                           <div class="col-sm ml-4 pl-1 text-justify">
 
                           </div>
@@ -263,20 +395,20 @@
           }
       </style>
       <div class="pricetag">
-          <div class="container d-flex justify-content-between align-items-center">
+          <div class="container col-sm-12 d-flex justify-content-between align-items-center">
               <div class="">
                   <a class="text-dark" href="#"><b>Total Cart</b></a><br>
                   <p class="text-orange"><b>Rp.130.0000</b></p>
               </div>
-              <ul class="d-flex justify-content-between align-items-center">
+              <ul class="d-flex justify-content-between p-2 align-items-center">
                   <li>
-                      <a href="#" class="btn btn-white btn-icon btn-icon-left d-flex align-items-center">
+                      <a href="#" class="col-sm-12 btn btn-white btn-icon btn-icon-left d-flex align-items-center">
                           <i class="material-icons">save</i>
                           <span>Save for Later</span>
                       </a>
                   </li>
                   <li>
-                      <a href="#" class="btn btn-orange text-light btn-icon btn-icon-left d-flex align-items-center">
+                      <a href="#" class="col-sm-12 btn btn-orange text-light btn-icon btn-icon-left d-flex align-items-center">
                           <span>Create Tour</span>
                       </a>
                   </li>
@@ -284,6 +416,7 @@
           </div>
       </div>
 
+      <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
       <script src="assets/bootstrap/js/jquery.js"></script>
       <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -291,6 +424,8 @@
       <script src='https://github.com/mattbryson/TouchSwipe-Jquery-Plugin/blob/master/jquery.touchSwipe.min.js'></script>
       <script src="assets/js/slider.js"></script>
       <script src="assets/js/app.js"></script>
+      <script src="assets/js/slick.js"></script>
+
   </body>
   <style>
       .container .trip {
@@ -357,7 +492,6 @@
 
       .btn-orange {
           background: orangered;
-          padding: 10px;
       }
 
       .pricetag {
@@ -430,6 +564,42 @@
   </style>
 
   </html>
+  <script id="jsbin-javascript">
+      $(function() {
+          $(".openModal").click(function() {
+              setTimeout(function() {
+                  var h = $(".modal-body .first-content p").height();
+                  $(".modal-body").css('height', h + 80 + 'px');
+                  $(".modal-body .first-content p").css('height', h + 'px');
+              }, 250);
+          });
+          $('.first-button').on('click', function() {
+              $('.first-content').animate({
+                  width: "toggle"
+              }, function() {
+                  $('.second-content').animate({
+                      width: "toggle"
+                  });
+                  var h = $(".modal-body .second-content p").height();
+                  $(".modal-body").css('height', h + 80 + 'px');
+                  $(".modal-body .second-content p").css('height', h + 'px');
+              });
+          });
+          $('.second-button').on('click', function() {
+              $('.second-content').animate({
+                  width: "toggle"
+              }, function() {
+                  $('.first-content').animate({
+                      width: "toggle"
+                  });
+                  var h = $(".modal-body .first-content p").height();
+                  $(".modal-body").css('height', h + 80 + 'px');
+                  $(".modal-body .first-content p").css('height', h + 'px');
+              });
+          });
+      });
+  </script>
+  <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
   <script src="assets/bootstrap/js/jquery.js"></script>
   <script src="assets/bootstrap/js/popper.js"></script>
   <script src="assets/bootstrap/js/bootstrap.min.js"></script>
