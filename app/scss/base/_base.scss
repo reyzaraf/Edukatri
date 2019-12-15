@@ -9,6 +9,8 @@
 .text-color-888 { color: #888; }
 .text-color-grey-darken-2 { color: darken(#ccc, 20%); }
 
+.bg-color-primary { background: $color-primary; }
+
 .text-size-big-1 { font-size: 1.1em; }
 .text-size-big-2 { font-size: 1.2em; }
 .text-size-big-3 { font-size: 1.3em; }
@@ -19,3 +21,4 @@
 .text-size-small-1 { font-size: 0.9em; }
 
 .border-bottom-1px-grey { border-bottom: 1px solid #eee; }
+.border-right-1px-grey { border-right: 1px solid #eee; }

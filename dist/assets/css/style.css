@@ -19,6 +19,9 @@
 .text-color-grey-darken-2 {
   color: #999999; }
 
+.bg-color-primary {
+  background: #2456d1; }
+
 .text-size-big-1 {
   font-size: 1.1em; }
 
@@ -45,6 +48,9 @@
 
 .border-bottom-1px-grey {
   border-bottom: 1px solid #eee; }
+
+.border-right-1px-grey {
+  border-right: 1px solid #eee; }
 
 nav {
   background: #fff;
@@ -255,6 +261,86 @@ nav {
             display: inline-block;
             margin: 0 10px; }
 
+footer {
+  margin-top: 80px;
+  background: #2456d1;
+  padding: 80px 0;
+  color: white; }
+  footer .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    footer .menu .menu-items a {
+      color: white; }
+  footer .subscribe form {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px 12px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    footer .subscribe form input, footer .subscribe form button {
+      border: 0;
+      background: none;
+      color: white;
+      outline: none; }
+    footer .subscribe form input {
+      -webkit-box-flex: 1;
+          -ms-flex: 1;
+              flex: 1; }
+      footer .subscribe form input::-webkit-input-placeholder {
+        color: #ccc; }
+      footer .subscribe form input::-moz-placeholder {
+        color: #ccc; }
+      footer .subscribe form input::-ms-input-placeholder {
+        color: #ccc; }
+      footer .subscribe form input::placeholder {
+        color: #ccc; }
+    footer .subscribe form button {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+  footer .subscribe p {
+    color: #ccc; }
+  footer .socmed {
+    padding: 0 40px; }
+    footer .socmed a {
+      color: white;
+      font-size: 0.5em; }
+  @media screen and (max-width: 768px) {
+    footer section {
+      margin-bottom: 15px; } }
+
 #payment .payment-background {
   background: url(../img/bg-top.png) top center no-repeat;
   background-size: cover;
@@ -268,7 +354,7 @@ nav {
           transform: rotateZ(180deg); }
 
 #payment .payment-wrapper-outer {
-  padding: 50px; }
+  padding: 100px 50px 0; }
   @media screen and (max-width: 992px) {
     #payment .payment-wrapper-outer {
       padding: 50px 0; } }
@@ -378,5 +464,18 @@ nav {
       border-right: 1px solid #eee; }
       #payment .payment-wrapper-outer .payment-wrapper .payment-bottom .payment-bottom-left section:not(:last-of-type) {
         border-bottom: 1px solid #eee; }
+
+#payment.payment-history .payment-wrapper.payment-history-filter .filter-bottom .filter-category-items .item {
+  background: white;
+  border: 1px solid #2456d1;
+  color: #2456d1;
+  padding: 5px 12px;
+  font-size: 0.8em;
+  cursor: pointer;
+  margin-right: 10px;
+  border-radius: 80px; }
+  #payment.payment-history .payment-wrapper.payment-history-filter .filter-bottom .filter-category-items .item:hover, #payment.payment-history .payment-wrapper.payment-history-filter .filter-bottom .filter-category-items .item.active {
+    background: #2456d1;
+    color: white; }
 
 /*# sourceMappingURL=app.css.map */

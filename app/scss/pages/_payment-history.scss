@@ -1,0 +1,25 @@
+#payment.payment-history {
+    .payment-wrapper {
+        &.payment-history-filter {
+            .filter-bottom {
+                .filter-category-items {
+                    .item {
+                        background: white;
+                        border: 1px solid $color-primary;
+                        color: $color-primary;
+                        padding: 5px 12px;
+                        font-size: 0.8em;
+                        cursor: pointer;
+                        margin-right: 10px;
+                        border-radius: 80px;
+
+                        &:hover, &.active {
+                            background: $color-primary;
+                            color:white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

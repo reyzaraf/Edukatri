@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap" rel="stylesheet">
+
+    <link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+
+    <link rel="stylesheet" type="text/css" href="assets/css/slider.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/slick.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/carousell.css">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/price-range.css">
+</head>
+
+<body>
+    <nav class="navbar fixed-top navbar-expand-md">
+        <div class="container">
+            <div class="navbar-left">
+                <a class="navbar-brand" href="#">Edukatrip</a>
+            </div>
+            <div class="navbar-right">
+                <ul class="navbar-menu">
+                    <li class="navbar-button">
+                        <a href="#">Become a Host</a>
+                    </li>
+                    <li class="navbar-link with-icon">
+                        <a href="#">
+                            <i class="material-icons">local_activity</i>
+                            <span>My Trip</span>
+                        </a>
+                    </li>
+                    <li class="navbar-link icon">
+                        <a href="#">
+                            <i class="material-icons">notifications</i>
+                        </a>
+                    </li>
+                </ul>
+                <div class="navbar-separator"></div>
+                <div class="navbar-profile">
+                    <a href="#" id="navbarProfileDropdownButton">
+                        <span class="navbar-profile-name">Ghany Razaq Arghantara</span>
+                        <span class="navbar-profile-image">
+                            <img src="./assets/img/profile-1.png" alt="">
+                        </span>
+                    </a>
+                    <div class="navbar-profile-dropdown">
+                        <div class="navbar-profile-top">
+                            <div class="navbar-profile-progress-wrapper">
+                                <div class="navbar-profile-progress" style="width: 50%"></div>
+                            </div>
+                            <a href="#" class="navbar-profile-complete-task">
+                                <span>Complete Your Profile</span>
+                                <i class="material-icons">keyboard_arrow_right</i>
+                            </a>
+                        </div>
+                        <div class="navbar-profile-bottom">
+                            <ul class="navbar-profile-bottom-left">
+                                <li>
+                                    <a href="#">
+                                        <span>Edukatrip Points</span>
+                                        <span>854</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>My Rewards</span>
+                                        <span>2</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="navbar-profile-bottom-separator"></div>
+                            <ul class="navbar-profile-bottom-right">
+                                <li><a href="#">Profile</a></li>
+                                <li><a href="#">Wishlist</a></li>
+                                <li><a href="#">Settings</a></li>
+                                <br>
+                                <li><a href="#">Log Out</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div id="payment" class="payment-history">
+        <div class="container">
+            <div class="payment-background"></div>
+            <div class="payment-wrapper-outer">
+                <div class="payment-page-title">Transaction History</div>
+
+                <div class="payment-wrapper payment-history-filter p-4 mb-4">
+                    <form class="filter-top row">
+                        <div class="col-3">
+                            <select class="form-control">
+                                <option>Sort</option>
+                            </select>
+                        </div>
+                        <div class="col-9">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="basic-addon1"><i class="material-icons">search</i></span>
+                                </div>
+                                <input type="text" class="form-control" placeholder="Search by University, Places, City" aria-label="Search by University, Places, City" aria-describedby="basic-addon1">
+                            </div>
+                        </div>
+                    </form>
+                    <div class="filter-bottom d-flex align-items-center mt-4">
+                        <div class="filter-category-title mr-3 font-weight-bold">Filter Status</div>
+                        <div class="filter-category-items d-flex flex-wrap">
+                            <a class="item active">All</a>
+                            <a class="item">Waiting Your Payment</a>
+                            <a class="item">Payment Processed</a>
+                            <a class="item">Trip Paid</a>
+                            <a class="item">Trip Finished</a>
+                            <a class="item">Trip Canceled</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="payment-cards">
+
+                    <div class="payment-wrapper payment-card">
+                        <div class="row m-0">
+                            <div class="col-5 border-right-1px-grey p-3">
+                                <div class="mb-2">09 October 2019</div>
+                                <div class="row">
+                                    <div class="col">
+                                        <img src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="col-9 d-flex flex-column justify-content-around">
+                                        <div class="font-weight-bold text-size-big-3">Institut Teknologi Bandung</div>
+                                        <small class="d-flex justify-content-between">
+                                            <span>10 Nov 2019 - 12 Nov 2019</span>
+                                            <a href="#">See Details</a>
+                                        </small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4 border-right-1px-grey p-3">
+                                <div class="mb-2">
+                                    <span class="mr-2">Status :</span>
+                                    <span class="text-success text-size-normal font-weight-bold">Trip Paid</span>
+                                </div>
+                                <small>Booking Code</small>
+                                <div class="text-size-normal font-weight-bold">SDH3A7D976F796AV</div>
+                            </div>
+                            <div class="col-3 p-0">
+                                <div class="p-3">
+                                    <div class="mb-2">Total Payment</div>
+                                    <div class="text-color-secondary text-size-big-3 font-weight-bold mb-2">Rp 630.000.000,00-</div>
+                                    <a href="#" class="btn btn-primary btn-block">Re-Order</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="payment-wrapper payment-card">
+                        <div class="row m-0">
+                            <div class="col-5 border-right-1px-grey p-3">
+                                <div class="mb-2">09 October 2019</div>
+                                <div class="row">
+                                    <div class="col">
+                                        <img src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="col-9 d-flex flex-column justify-content-around">
+                                        <div class="font-weight-bold text-size-big-3">Institut Teknologi Bandung</div>
+                                        <small class="d-flex justify-content-between">
+                                            <span>10 Nov 2019 - 12 Nov 2019</span>
+                                            <a href="#">See Details</a>
+                                        </small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4 border-right-1px-grey p-3">
+                                <div class="mb-2">
+                                    <span class="mr-2">Status :</span>
+                                    <span class="text-success text-size-normal font-weight-bold">Trip Paid</span>
+                                </div>
+                                <small>Booking Code</small>
+                                <div class="text-size-normal font-weight-bold">SDH3A7D976F796AV</div>
+                            </div>
+                            <div class="col-3 p-0">
+                                <div class="p-3">
+                                    <div class="mb-2">Total Payment</div>
+                                    <div class="text-color-secondary text-size-big-3 font-weight-bold mb-2">Rp 630.000.000,00-</div>
+                                    <a href="#" class="btn btn-primary btn-block">Re-Order</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="payment-wrapper payment-card">
+                        <div class="row m-0">
+                            <div class="col-5 border-right-1px-grey p-3">
+                                <div class="mb-2">09 October 2019</div>
+                                <div class="row">
+                                    <div class="col">
+                                        <img src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="col-9 d-flex flex-column justify-content-around">
+                                        <div class="font-weight-bold text-size-big-3">Institut Teknologi Bandung</div>
+                                        <small class="d-flex justify-content-between">
+                                            <span>10 Nov 2019 - 12 Nov 2019</span>
+                                            <a href="#">See Details</a>
+                                        </small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4 border-right-1px-grey p-3">
+                                <div class="mb-2">
+                                    <span class="mr-2">Status :</span>
+                                    <span class="text-success text-size-normal font-weight-bold">Trip Paid</span>
+                                </div>
+                                <small>Booking Code</small>
+                                <div class="text-size-normal font-weight-bold">SDH3A7D976F796AV</div>
+                            </div>
+                            <div class="col-3 p-0">
+                                <div class="p-3">
+                                    <div class="mb-2">Total Payment</div>
+                                    <div class="text-color-secondary text-size-big-3 font-weight-bold mb-2">Rp 630.000.000,00-</div>
+                                    <a href="#" class="btn btn-primary btn-block">Re-Order</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <section class="col-md-1 text-size-big-2 font-weight-bold">LOGO</section>
+                <section class="col-md-4 menu">
+                    <div class="menu-items">
+                        <div class="row">
+                            <div class="col-md-4 d-flex flex-column">
+                                <a href="#" class="item">Home</a>
+                                <a href="#" class="item">Discovery</a>
+                                <a href="#" class="item">Photos</a>
+                                <a href="#" class="item">Contact</a>
+                            </div>
+                            <div class="col-md-4 d-flex flex-column">
+                                <a href="#" class="item">About</a>
+                                <a href="#" class="item">Helps</a>
+                                <a href="#" class="item">Terms</a>
+                                <a href="#" class="item">Guidelines</a>
+                            </div>
+                            <div class="col-md-4 d-flex flex-column">
+                                <a href="#" class="item">Testimonials</a>
+                                <a href="#" class="item">Advertise</a>
+                                <a href="#" class="item">Integrations</a>
+                                <a href="#" class="item">Careers</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="col-md-4 subscribe">
+                    <form action="#">
+                        <input type="email" placeholder="Email">
+                        <button type="submit">
+                            <i class="material-icons">near_me</i>
+                        </button>
+                    </form>
+                    <p class="mt-2">Stay in touch with us for the freshest products!</p>
+                </section>
+                <section class="col-md-3 socmed">
+                    <div class="row justify-content-around">
+                        <a href="#"><i class="fa fa-instagram fa-2x"></i></a>
+                        <a href="#"><i class="fa fa-twitter fa-2x"></i></a>
+                        <a href="#"><i class="fa fa-facebook fa-2x"></i></a>
+                        <a href="#"><i class="fa fa-globe fa-2x"></i></a>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="assets/bootstrap/js/jquery.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src='https://github.com/mattbryson/TouchSwipe-Jquery-Plugin/blob/master/jquery.touchSwipe.min.js'></script>
+    <script src="assets/js/slider.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/slick.js"></script>
+
+</body>
+
+</html>
