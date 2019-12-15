@@ -266,6 +266,9 @@ footer {
   background: #2456d1;
   padding: 80px 0;
   color: white; }
+  footer .logo a {
+    color: white;
+    text-decoration: none; }
   footer .menu {
     display: -webkit-box;
     display: -ms-flexbox;

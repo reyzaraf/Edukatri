@@ -4,6 +4,13 @@ footer {
    padding: 80px 0;
    color: white;
 
+   .logo {
+      a {
+         color: white;
+         text-decoration: none;
+      }
+   }
+
    .menu {
       @include my-flex(row, flex-start, space-between);
 
