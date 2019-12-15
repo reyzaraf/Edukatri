@@ -7,6 +7,19 @@
       <title>My Booking</title>
       @@include('template/resources/styles.html')
   </head>
+  <style id="jsbin-css">
+.modal-body div p{
+  overflow: hidden;
+}
+.first-content{
+  width: 100%;
+  float:left;
+}
+.second-content{
+  width: 100%;
+  float: right;
+}
+</style>
   <body>
                 <!-- <div style="z-index: -1;position: relative;top: -230px;">
                     <div style="z-index: -1;position: relative;top: 200px;">
@@ -39,13 +52,14 @@
                           </li>
                           <li>
                               <div class="row">
-                                  <div class="col-sm ">
-                                      <div class="mainflip">
+                                  <div class="col-sm-5">
+                                      
+                                    <div class="mainflip">
                                       <div class="frontside">
                                           <div class="card new-tour">
                                               <div class="w-100 card-body text-center">
                                                     <!-- <p><img class=" img-fluid" src="https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_01.png" alt="card image"></p> -->
-                                                  <a class="btn btn-white" href="#"><i class="btn btn-primary rounded-circle fa fa-plus"></i>
+                                                  <a class="btn btn-white" data-toggle="modal" data-target="#myModal" ><i class="btn btn-primary rounded-circle fa fa-plus"></i>
                                                   <h1 class="card-title"><span class="w-50"> Add More </span></h1> 
                                                   <h1 class="card-title"><span class="w-50"> Destination </span></h1> </a>
                                               </div>
@@ -54,6 +68,117 @@
                                         </div>
 
                                   </div>
+                                        <div id="myModal" class="modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-lg">
+                                                <!-- Modal content-->
+                                                <div class="modal-content ">
+                                                    <div class="modal-header">
+                                                        <h5 class="float-left modal-title"><b>Choose Next Destination</b></h5>
+                                                        <select class="form-control w-25 float-right ml-5" name="" id="">
+                                                          <option value=""><i class="fa fa-sort-amount-down"> </i> Sort By</option>
+                                                        </select>
+                                                        <div class="form-control w-50 ml-2">
+                                                          <i class="fa fa-search"></i>
+                                                          <input type="text" style="border:0px;" placeholder="Find Destination">
+                                                        </div>
+                                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                        
+                                                      </div>
+                                                    <div class="modal-body">
+                                                      <div class="row">
+                                                        <div class="col-sm-3">
+                                                          <img class="w-100" style="height: 150px;" src="assets/img/1.png" alt="">
+                                                        </div>
+                                                        <div class="col-sm-9">
+                                                          <h5><b>Floating market</b></h5>
+                                                         <p> <b>30 Min Travel Time</b> From Farm house</p>
+                                                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est nulla reprehenderit repellat debitis ratione excepturi maiores natus quidem maxime veritatis dolores nemo nam doloremque, officiis quis eos dolorem quasi voluptatem.</p>
+                                                         <div class="row">
+                                                          <div class="col-sm-6">
+                                                            <p><b class="text-danger">Rp. 130.000</b> Per Person</p>
+                                                          </div>
+                                                          <div class="col-sm-6">
+                                                                <a href="#myModal1" role="button" class="float-right btn btn-outline-primary" data-toggle="modal">Choose Destination</a>
+
+                                                            </div>
+                                                         </div>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                        
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div id="myModal1" class="modal modal-child" data-backdrop-limit="1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-modal-parent="#myModal">
+                                            <div class="modal-dialog modal-lg">
+                                                <!-- Modal content-->
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h4 class="modal-title float-left"><b>Floating Market</b></h4>
+                                                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                       
+                                                    </div>
+                                                    <div class="modal-body">
+                                                      <div class="row">
+                                                        <div class="col-sm-4">
+                                                          <img class="w-100" style="height: 150px;" src="assets/img/1.png" alt="">
+                                                          <b>30 Min travel time</b>
+                                                          <p>From Farm House Lembang</p>
+                                                        </div>
+                                                        <div class="col-sm-8">
+                                                          <div class="row">
+                                                            <div class="col-sm-6">
+                                                                <p>Start Time</p>
+                                                                <div class="row">
+                                                                  <div class="col-sm-6">
+                                                                    <select class="form-control" name="" id="">
+                                                                      <option value="">12</option>
+                                                                      <option value="">11</option>
+                                                                    </select>
+                                                                  </div>
+                                                                  <div class="col-sm-6">
+                                                                      <select class="form-control" name="" id="">
+                                                                          <option value="">12</option>
+                                                                          <option value="">11</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <p>End Time</p>
+                                                                <div class="row">
+                                                                  <div class="col-sm-6">
+                                                                    <select class="form-control" name="" id="">
+                                                                      <option value="">12</option>
+                                                                      <option value="">11</option>
+                                                                    </select>
+                                                                  </div>
+                                                                  <div class="col-sm-6">
+                                                                      <select class="form-control" name="" id="">
+                                                                          <option value="">12</option>
+                                                                          <option value="">11</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                       
+                                                          </div>
+                                                          <div>
+                                                            <p>Note</p>
+                                                            <textarea class="form-control" name="" id="" cols="10" rows="6"></textarea>
+                                                            <br>
+                                                            <input type="text" class="float-right btn btn-primary" value="Add to Timeline">
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                                                            
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                  
                                   <div class="col-sm ml-4 pl-1 text-justify">
                                       
                                   </div>
@@ -181,6 +306,34 @@
 
 </style>
 </html>
+<script id="jsbin-javascript">
+  $(function () {
+    $(".openModal").click(function(){
+      setTimeout(function(){
+        var h=$(".modal-body .first-content p").height();
+        $(".modal-body").css('height',h+80+'px');
+        $(".modal-body .first-content p").css('height',h+'px');
+      },250);
+    });
+    $('.first-button').on('click', function () {
+      $('.first-content').animate({width:"toggle"}, function(){
+        $('.second-content').animate({width:"toggle"});
+          var h=$(".modal-body .second-content p").height();
+          $(".modal-body").css('height',h+80+'px');
+          $(".modal-body .second-content p").css('height',h+'px');
+        });
+    });
+    $('.second-button').on('click', function () {
+      $('.second-content').animate({width:"toggle"},function(){
+        $('.first-content').animate({width:"toggle"});
+          var h=$(".modal-body .first-content p").height();
+          $(".modal-body").css('height',h+80+'px');
+          $(".modal-body .first-content p").css('height',h+'px');
+      });
+    });
+  });
+  </script>
+  <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
 <script src="assets/bootstrap/js/jquery.js"></script>
 <script src="assets/bootstrap/js/popper.js"></script>
 <script src="assets/bootstrap/js/bootstrap.min.js"></script>
