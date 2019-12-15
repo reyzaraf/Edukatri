@@ -46,6 +46,9 @@
 .border-bottom-1px-grey {
   border-bottom: 1px solid #eee; }
 
+.border-right-1px-grey {
+  border-right: 1px solid #eee; }
+
 nav {
   background: #fff;
   padding-top: 15px;
@@ -378,5 +381,18 @@ nav {
       border-right: 1px solid #eee; }
       #payment .payment-wrapper-outer .payment-wrapper .payment-bottom .payment-bottom-left section:not(:last-of-type) {
         border-bottom: 1px solid #eee; }
+
+#payment.payment-history .payment-wrapper.payment-history-filter .filter-bottom .filter-category-items .item {
+  background: white;
+  border: 1px solid #2456d1;
+  color: #2456d1;
+  padding: 5px 12px;
+  font-size: 0.8em;
+  cursor: pointer;
+  margin-right: 10px;
+  border-radius: 80px; }
+  #payment.payment-history .payment-wrapper.payment-history-filter .filter-bottom .filter-category-items .item:hover, #payment.payment-history .payment-wrapper.payment-history-filter .filter-bottom .filter-category-items .item.active {
+    background: #2456d1;
+    color: white; }
 
 /*# sourceMappingURL=app.css.map */
