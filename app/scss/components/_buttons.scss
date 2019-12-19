@@ -1,2 +1,18 @@
 .btn {
+    &.btn-auth-google,
+    &.btn-auth-facebook {
+        padding: 10px 20px;
+        font-size: 1.1em;
+    }
+
+    &.btn-auth-google {
+        background: transparent;
+        border-color: #333;
+        color: #333;
+    }
+
+    &.btn-auth-facebook {
+        background: $color-facebook;
+        border-color: $color-facebook;
+    }
 }

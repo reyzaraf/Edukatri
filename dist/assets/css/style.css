@@ -261,6 +261,19 @@ nav {
             display: inline-block;
             margin: 0 10px; }
 
+.btn.btn-auth-google, .btn.btn-auth-facebook {
+  padding: 10px 20px;
+  font-size: 1.1em; }
+
+.btn.btn-auth-google {
+  background: transparent;
+  border-color: #333;
+  color: #333; }
+
+.btn.btn-auth-facebook {
+  background: #4b5998;
+  border-color: #4b5998; }
+
 footer {
   margin-top: 80px;
   background: #2456d1;
@@ -684,5 +697,47 @@ hr {
   #payment.payment-history .payment-wrapper.payment-history-filter .filter-bottom .filter-category-items .item:hover, #payment.payment-history .payment-wrapper.payment-history-filter .filter-bottom .filter-category-items .item.active {
     background: #2456d1;
     color: white; }
+
+.auth-wrapper {
+  padding: 50px 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
+  @media screen and (max-width: 992px) {
+    .auth-wrapper {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
+  @media screen and (max-width: 768px) {
+    .auth-wrapper {
+      padding: 30px 20px; } }
+  .auth-wrapper .auth-form {
+    border: 1px solid #ccc;
+    padding: 80px 60px;
+    width: 550px;
+    border-radius: 20px; }
+    @media screen and (max-width: 576px) {
+      .auth-wrapper .auth-form {
+        padding: 60px 40px; } }
 
 /*# sourceMappingURL=app.css.map */
