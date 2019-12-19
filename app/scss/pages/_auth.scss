@@ -1,0 +1,21 @@
+.auth-wrapper {
+    padding: 50px 80px;
+    @include my-flex(row, center, flex-end);
+    @media screen and (max-width: 992px) {
+        @include my-flex(row, center, center);
+    }
+    @media screen and (max-width: 768px) {
+        padding: 30px 20px;
+    }
+
+    .auth-form {
+        border: 1px solid #ccc;
+        padding: 80px 60px;
+        width: 550px;
+        border-radius: 20px;
+
+        @media screen and (max-width: 576px) {
+            padding: 60px 40px;
+        }
+    }
+}
