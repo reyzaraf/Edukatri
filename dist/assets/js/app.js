@@ -74,8 +74,6 @@ var $ = __webpack_require__(1);
 var TypeIt = __webpack_require__(2);
 
 $(document).ready(function () {
-    alert("OK!");
-
     $('#navbarProfileDropdownButton').click(function () {
         $('.navbar-profile-dropdown').toggleClass('active');
     });
