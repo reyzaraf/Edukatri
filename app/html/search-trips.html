@@ -86,12 +86,11 @@
                                 <div class="col-sm-6">
                                     <b>Price Range</b>
                                 </div>
-                                <div class="col-sm-4 btn-show"></div>
+                                <div class="col-sm-3"></div>
                             </div>
                             <div class="col-sm-12">
                                 <div class="input-group">
                                     <input class="price-range js-input-from" type="text" aria-label="First name" class="form-control" placeholder="Rp.0">
-                                    <hr>
                                     <input class="price-range js-input-to" type="text" aria-label="First name" class="form-control" placeholder="Rp.10.000.000">
                                 </div>
                             </div>
@@ -288,6 +287,8 @@
     </div>
 
     </div>
+    @@include('components/footer.html')
+
     @@include('template/resources/scripts.html')
     <script>
         $('#carouselExample').on('slide.bs.carousel', function (e) {
