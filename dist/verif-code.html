@@ -25,15 +25,23 @@
 <body>
     <div class="auth-wrapper">
         <form class="auth-form verif-code">
-            <span class="sticky-top pb-5">
-                <p>Verification Code has been sent to <br><b>RERERER@gmail.com</b></p>
-                <p>Please insert code to verify</p>
+            <span class="auth-notif-top">
+                <div>Verification Code has been sent to <br><b>ghanyrazaqhergantara@gmail.com</b> Please insert code to verify</div>
             </span>
-            <h2 class="auth-head font-weight-bold mb-4">Enter Verification Code <span class="text-color-secondary">Edukatrip</span></h2>
+            <br><br><br>
+            <h2 class="auth-head font-weight-bold mb-4">Enter Verification Code</h2>
             <h5 class="font-weight-bold mb-4">Verification Code</h5>
             <label><b>Code</b></label><br>
             <input type="text" class="form-control" name="verif-code" placeholder="Enter your code here" required="" autofocus="" /><br>
             <button class="btn btn-lg btn-primary btn-block" type="submit">Submit</button>
+            <br>
+            <div class="auth-login-method">
+                <a class="btn btn-primary btn-block btn-auth-google" href="#"><i class="float-left mt-1 mr-2 fa fa-google"></i> Register with Google</a>
+                <a class="btn btn-primary btn-block btn-auth-facebook" href="#"><i class="float-left mt-1 mr-2 fa fa-facebook"></i> Register with Facebook</a>
+            </div>
+            <div class="d-flex mt-3">
+                <span class="mr-2">Have Account ?</span> <a href="">Login</a>
+            </div>
         </form>
     </div>
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>

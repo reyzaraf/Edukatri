@@ -296,7 +296,7 @@ nav {
 
 .btn.btn-auth-google, .btn.btn-auth-facebook {
   padding: 10px 20px;
-  font-size: 1.1em; }
+  font-size: 1em; }
 
 .btn.btn-auth-google {
   background: transparent;
@@ -773,12 +773,21 @@ hr {
     width: 550px;
     max-width: 100%;
     border-radius: 20px;
-    background: white; }
+    background: white;
+    position: relative;
+    overflow: hidden; }
     @media screen and (max-width: 576px) {
       .auth-wrapper .auth-form {
         padding: 60px 40px; } }
     .auth-wrapper .auth-form.verif-code {
       width: 450px; }
+      .auth-wrapper .auth-form.verif-code .auth-notif-top {
+        position: absolute;
+        left: 0;
+        top: 0;
+        padding: 20px 40px;
+        width: 100%;
+        background: #eee; }
       .auth-wrapper .auth-form.verif-code .auth-head {
         font-size: 1.7em; }
 
