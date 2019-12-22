@@ -12,6 +12,16 @@ $(document).ready(function() {
     }) 
 
     $('#navbarProfileDropdownButton').click(function() {
-        $('.navbar-profile-dropdown').toggleClass('active');
+        console.log($(window).width());
+        if($(window).width() > 768) {
+            $('.navbar-profile-dropdown').toggleClass('active');
+        } else {
+            $('.navbar-menu-responsive').addClass('active');
+            $('.navbar-menu-responsive + .bg-overlay').click(function(e) {
+                if (e.target == this) {
+                    $('.navbar-menu-responsive').removeClass('active');
+                }
+            })
+        }
     })
 })
