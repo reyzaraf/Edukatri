@@ -4,11 +4,20 @@ nav {
     padding-bottom: 15px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     .container {
+        .navbar-main-toggle {
+            display: none;
+            cursor: pointer;
+            @media screen and (max-width: 768px) {
+                @include my-flex(row, center, center);
+            }
+        }
         .navbar-left {
             .navbar-brand {
                 color: $color-secondary;
                 text-decoration: none;
                 font-weight: bold;
+
+                @media screen and (max-width: 768px) { margin: 0; }
             }
         }
 
@@ -184,7 +193,7 @@ nav {
                     
                     @media screen and (max-width: 768px) {
                         position: fixed;
-                        top: 110px;
+                        top: 70px;
                         left: 50%;
                         max-width: 100%;
                         transform: translate(-50%, 10px);
