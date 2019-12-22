@@ -25,6 +25,7 @@
 <body>
     <nav class="navbar fixed-top navbar-expand-">
         <div class="container">
+            <div class="navbar-main-toggle"><i class="material-icons">dehaze</i></div>
             <div class="navbar-left">
                 <a class="navbar-brand" href="/">Edukatrip</a>
             </div>
@@ -45,6 +46,28 @@
                         </a>
                     </li>
                 </ul>
+                <ul class="navbar-menu-responsive">
+                    <a class="navbar-brand" href="/">Edukatrip</a>
+                    <li>
+                        <a href="#">
+                            <i class="material-icons">person</i>
+                            <span>Become a Host</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="material-icons">local_activity</i>
+                            <span>My Trip</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="material-icons">notifications</i>
+                            <span>Notifications</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="bg-overlay"></div>
                 <div class="navbar-separator"></div>
                 <div class="navbar-profile">
                     <a href="#" id="navbarProfileDropdownButton">
@@ -166,6 +189,14 @@
     </div>
     </div>
     </div>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src='https://github.com/mattbryson/TouchSwipe-Jquery-Plugin/blob/master/jquery.touchSwipe.min.js'></script>
+    <script src="./assets/js/slider.js"></script>
+    <script src="./assets/js/slick.js"></script>
+    <script src="./assets/js/app.js"></script>
 
 </body>
 <style>
@@ -180,10 +211,3 @@
 </style>
 
 </html>
-<script src="assets/bootstrap/js/jquery.js"></script>
-<script src="assets/bootstrap/js/popper.js"></script>
-<script src="assets/bootstrap/js/bootstrap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.6.2/bootstrap-slider.js"></script>
-<script src='https://github.com/mattbryson/TouchSwipe-Jquery-Plugin/blob/master/jquery.touchSwipe.min.js'></script>
-<script src="assets/js/slider.js"></script>
-<script src="assets/js/range-slider.js"></script>

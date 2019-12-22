@@ -4,15 +4,20 @@ nav {
     padding-bottom: 15px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     .container {
-        @media screen and (max-width: 768px) {
-            @include my-flex(column, center, center);
+        .navbar-main-toggle {
+            display: none;
+            cursor: pointer;
+            @media screen and (max-width: 768px) {
+                @include my-flex(row, center, center);
+            }
         }
-
         .navbar-left {
             .navbar-brand {
                 color: $color-secondary;
                 text-decoration: none;
                 font-weight: bold;
+
+                @media screen and (max-width: 768px) { margin: 0; }
             }
         }
 
@@ -24,6 +29,7 @@ nav {
                 margin: 0;
                 padding: 0;
                 @include my-flex(row, center, center);
+                @media screen and (max-width: 768px) { display: none; }
 
                 li {
                     a {
@@ -59,11 +65,91 @@ nav {
                 }
             }
 
+            .bg-overlay { display: none; }
+
+            .navbar-menu-responsive {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 250px;
+                background: white;
+                height: 100vh;
+                box-shadow: 5px 0 10px rgba(0,0,0,0.1);
+                list-style: none;
+                padding: 0;
+                z-index: 99;
+                transition: all 300ms ease;
+                transform: translateX(-100%);
+                @include my-flex(column, flex-start, flex-start);
+                
+                .navbar-brand {
+                    background: $color-primary;
+                    padding: 18px 10px;
+                    text-align: center;
+                    color: white;
+                    display: block;
+                    width: 100%;
+                    margin-bottom: 10px;
+                }
+
+                & + .bg-overlay {
+                    background: transparentize(#333, 0.3);
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100vh;
+                    z-index: 98;
+                    transition: all 300ms ease;
+                    @media screen and (max-width: 768px) {
+                        display: block;
+                        visibility: hidden;
+                        opacity: 0;
+                    }
+                }
+
+                li {
+                    width: 100%;
+                    a {
+                        border: 0;
+                        width: 100%;
+                        display: block;
+                        text-align: left;
+                        border-radius: 0;
+                        padding: 15px 20px;
+                        color: #333;
+                        text-decoration: none;
+                        transition: all 200ms ease;
+                        @include my-flex(row, center, flex-start);
+
+                        i { 
+                            color: $color-primary; 
+                            margin-right: 10px;
+                        }
+
+                        &:hover {
+                            background: darken(white, 5%);
+                        }
+                    }
+                }
+
+                &.active {
+                    transform: translateX(0);
+                    & + .bg-overlay {
+                        visibility: visible;
+                        opacity: 1;
+                    }
+                }
+            }
+
             .navbar-separator {
                 width: 1px;
                 height: 30px;
                 background: #ccc;
                 margin: 0 10px;
+                @media screen and (max-width: 768px) {
+                    display: none;
+                }
             }
 
             .navbar-profile {
@@ -107,7 +193,7 @@ nav {
                     
                     @media screen and (max-width: 768px) {
                         position: fixed;
-                        top: 110px;
+                        top: 70px;
                         left: 50%;
                         max-width: 100%;
                         transform: translate(-50%, 10px);
