@@ -1,0 +1,147 @@
+#listPackage {
+    .page-title {
+        .title {
+            color: #333;
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+    }
+
+    .list-package {
+        .list-package-item {
+            margin-bottom: 15px;
+
+            .images {
+                div { 
+                    position: relative;
+                    overflow: hidden;
+                    border-radius: 8px;
+                }
+                img { 
+                    border-radius: 8px; 
+                    object-fit: cover;
+                    object-position: unset;
+                }
+                .image-top {
+                    width: 100%;
+                    height: 180px;
+                }
+                .image-bottom {
+                    div {
+                        width: 100%;
+                        height: 130px;
+                    }
+                }
+            }
+            
+            .description {
+                .title-wrapper {
+                    .title {
+                        font-weight: bold;
+                        font-size: 1.5em;
+                    }
+                    .buttons {
+                        @include my-flex(row, center, center);
+
+                        a {
+                            text-decoration: none;
+                            border: 1px solid #333;
+                            color: #333;
+                            padding: 8px 18px;
+                            border-radius: 5px;
+                            margin-left: 10px;
+                            transition: all 200ms ease;
+                            @include my-flex(row, center, center);
+
+                            i { margin-right: 5px; font-size: 1.3em; }
+
+                            &:hover { background: #fafafa; }
+                        }
+                    }
+                }
+
+                .location-wrapper {
+                    @include my-flex(row, center, flex-start);
+
+                    i { margin-right: 5px; }
+                }
+
+                .details-wrapper {
+                    .detail-item {
+                        .title { 
+                            margin-bottom: 5px; 
+                            font-weight: bold;
+                        }
+
+                        &.time-remaining {
+                            .time-wrapper {
+                                @include my-flex(row, center, space-between);
+                                .time-block {
+                                    flex: 1;
+                                    font-size: 0.8em;
+                                    color: #888;
+                                    @include my-flex(column, center, space-between);
+    
+                                    &:not(:first-of-type) { margin-left: 10px; }
+    
+                                    .block {
+                                        display: inline-block;
+                                        flex: 1;
+                                        background: $color-primary;
+                                        color: white;
+                                        font-size: 1.1em;
+                                        width: 35px;
+                                        text-align: center;
+                                        padding: 5px 0;
+                                        border-radius: 5px;
+                                    }
+                                }
+                            }
+                        }
+
+                        &.peoples {
+                            .peoples-image {
+                                margin-bottom: 8px;
+                                img {
+                                    width: 35px;
+
+                                    &:nth-child(2) { transform: translateX(-30%) }
+                                    &:nth-child(3) { transform: translateX(-60%) }
+                                }
+                            }
+                            .peoples-count {
+                                .progress-wrapper {
+                                    overflow: hidden;
+                                    background: #eee;
+                                    height: 3px;
+                                    margin-top: 5px;
+
+                                    .progress-bar {
+                                        background: $color-secondary;
+                                        height: 3px;
+                                    }
+                                }
+                            }
+                            .peoples-message { font-size: 0.9em }
+                        }
+
+                        &.actions {
+                            a.btn { 
+                                background: $color-secondary; 
+                                color: white;
+                                transition: all 200ms ease;
+
+                                &:hover {
+                                    background: darken($color-secondary, 5%)
+                                }
+                            }
+                        }
+                    }
+                }
+
+                hr { border-width: 1px; }
+            }
+        }
+    }
+}
