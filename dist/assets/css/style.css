@@ -995,11 +995,16 @@ hr {
   #listPackage .list-package .list-package-item .images div {
     position: relative;
     overflow: hidden;
-    border-radius: 8px; }
+    border-radius: 12px; }
   #listPackage .list-package .list-package-item .images img {
     border-radius: 8px;
     -o-object-fit: cover;
-       object-fit: cover; }
+       object-fit: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%; }
   #listPackage .list-package .list-package-item .images .image-top {
     width: 100%;
     height: 180px;

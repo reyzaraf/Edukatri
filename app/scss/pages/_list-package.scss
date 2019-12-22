@@ -16,11 +16,16 @@
                 div { 
                     position: relative;
                     overflow: hidden;
-                    border-radius: 8px;
+                    border-radius: 12px;
                 }
                 img { 
                     border-radius: 8px; 
                     object-fit: cover;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    height: 100%;
+                    width: 100%;
                 }
                 .image-top {
                     width: 100%;
