@@ -56,9 +56,28 @@
                         </a>
                     </li>
                     <li class="navbar-link icon">
-                        <a href="#">
+                        <a href="#" id="navbarNotifDropdownButton">
                             <i class="material-icons">notifications</i>
                         </a>
+                        <div class="navbar-notif-dropdown">
+                            <form action="#">
+                                <ul>
+                                    <li>
+                                        <span>Notifikasi Email</span>
+                                        <span><input type="checkbox" name="notification" id="email"></span>
+                                    </li>
+                                    <li>
+                                        <span>Notifikasi SMS</span>
+                                        <span><input type="checkbox" name="notification" id="sms"></span>
+                                    </li>
+                                    <li>
+                                        <span>Notifikasi Whatsapp</span>
+                                        <span><input type="checkbox" name="notification" id="whatsapp"></span>
+                                    </li>
+                                </ul>
+                                <button class="btn btn-primary btn-block">Simpan Perubahan</button>
+                            </form>
+                        </div>
                     </li>
                 </ul>
                 <ul class="navbar-menu-responsive">

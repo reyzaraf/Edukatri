@@ -32,6 +32,8 @@ nav {
                 @media screen and (max-width: 768px) { display: none; }
 
                 li {
+                    position: relative;
+
                     a {
                         color: #555;
                         border-radius: 5px;
@@ -60,6 +62,77 @@ nav {
                     &.navbar-button {
                         a {
                             border: 1px solid #ccc;
+                        }
+                    }
+
+                    .navbar-notif-dropdown {
+                        position: absolute;
+                        top: 50px;
+                        right: 0;
+                        background: white;
+                        border-radius: 5px;
+                        padding: 18px 22px;
+                        width: 300px;
+                        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+                        transform: translateY(10px);
+                        visibility: hidden;
+                        opacity: 0;
+                        transition: all 300ms ease;
+
+                        &.active { visibility: visible; opacity: 1; transform: translateY(0); }
+
+                        form {
+                            ul {
+                                list-style: none;
+                                margin: 0;
+                                padding: 0;
+                                margin-bottom: 15px;
+
+                                li {
+                                    @include my-flex(row, center, space-between);
+                                    &:not(:first-of-type) {
+                                        margin-top: 15px;
+                                    }
+
+                                    input {
+                                        appearance: none;
+                                        width: 45px;
+                                        height: 20px;
+                                        background: #eee;
+                                        border-radius: 80px;
+                                        outline: none;
+                                        box-shadow: inset 0 0 5px rgba(0,0,0,0.1);
+                                        transition: all 300ms ease;
+                                        position: relative;
+                                        transform: translateY(2px);
+                                        cursor: pointer;
+
+                                        &:before {
+                                            position: absolute;
+                                            content: '';
+                                            top: 50%;
+                                            left: 0px;
+                                            width: 25px;
+                                            height: 25px;
+                                            transform: translateY(-50%);
+                                            background: white;
+                                            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+                                            border-radius: 100%;
+                                            transition: all 300ms ease;
+                                        }
+
+                                        &:checked {
+                                            background: rgb(37, 179, 120);
+
+                                            &:before {
+                                                left: 100%;
+                                                transform: translate(-98%, -50%);
+                                            }
+                                        }
+
+                                    }
+                                }
+                            }
                         }
                     }
                 }
