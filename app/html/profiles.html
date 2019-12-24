@@ -63,22 +63,22 @@
 				<h3><b> </b></h3>
 				<div class="card" id="profileTabs">
 					<ul class="nav nav-tabs p-3" id="myTab" role="tablist">
-						<li class="nav-item">
+						<li class="nav-item active">
 							<a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
-								aria-controls="profile" aria-selected="false">Profile</a>
+								aria-controls="profile" aria-selected="true">Profile</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" id="payment-tab" data-toggle="tab" href="#payment" role="tab" aria-controls="payment"
 								aria-selected="false">Payment</a>
 						</li>
-						<li class="nav-item active">
+						<li class="nav-item">
 							<a class="nav-link" id="notif-tab" data-toggle="tab" href="#notif" role="tab" aria-controls="notif"
-								aria-selected="true">Notifications</a>
+								aria-selected="false">Notifications</a>
 						</li>
 					</ul>
 					<div class="card-body">
 						<div class="tab-content" id="myTabContent">
-							<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+							<div class="tab-pane fade show active" id="profile" role="tabpanel" aria-labelledby="profile-tab">
 								<hr>
 								<form class="form" action="##" method="post" id="registrationForm">
 									<div class="form-group">
@@ -151,7 +151,7 @@
 							<div class="tab-pane fade" id="payment" role="tabpanel" aria-labelledby="payment-tab">
 								PAYMENT
 							</div>
-							<div class="tab-pane fade show active" id="notif" role="tabpanel" aria-labelledby="notif-tab">
+							<div class="tab-pane fade" id="notif" role="tabpanel" aria-labelledby="notif-tab">
 								<h5>Pengaturan Notifikasi</h5>
 								<br>
 								<form action="#">
