@@ -98,7 +98,7 @@ nav {
                                         appearance: none;
                                         width: 45px;
                                         height: 20px;
-                                        background: #eee;
+                                        background: rgb(214, 214, 214);
                                         border-radius: 80px;
                                         outline: none;
                                         box-shadow: inset 0 0 5px rgba(0,0,0,0.1);
@@ -116,7 +116,7 @@ nav {
                                             height: 25px;
                                             transform: translateY(-50%);
                                             background: white;
-                                            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+                                            box-shadow: 0 0 5px rgba(0,0,0,0.2);
                                             border-radius: 100%;
                                             transition: all 300ms ease;
                                         }
