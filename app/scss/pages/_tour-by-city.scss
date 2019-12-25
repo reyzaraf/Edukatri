@@ -1,0 +1,119 @@
+#tourByCity {
+    .page-title {
+        .title {
+            color: #333;
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+    }
+
+    .filter-results {
+        .price-range {
+            border-radius: 80px;
+            border: 1px solid #ccc;
+        }
+    }
+
+    #tbcPhotosCarousel {
+        position: relative;
+
+        .owl-item {
+            img { border-radius: 10px; }
+        }
+
+        .owl-nav {
+            button {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                color: #888;
+                background: white;
+                border-radius: 100%;
+                @include my-flex(row, center, center);
+
+                &.owl-prev { left:5px; }
+                &.owl-next { right:5px; }
+            }
+        }
+    }
+
+    .cities-category {
+        a.city {
+            position: relative;
+            height: 140px;
+
+            img { 
+                border-radius: 12px; 
+                object-fit: cover;
+                filter: brightness(70%);
+                width: 100%;
+                height: 100%;
+                transition: all 200ms ease;
+            }
+
+            span {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: white;
+                font-weight: bold;
+                font-size: 1.4em;
+            }
+
+            &:hover {
+                img { filter: brightness(60%); }
+            }
+        }
+    }
+
+    .cities-card {
+
+        .city-item {
+            color: #333;
+            text-decoration: none;
+            margin-bottom: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0,0,0,.1);
+            overflow: hidden;
+
+            .city-image {
+                img {
+                    object-fit: cover;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            .city-desc {
+                border-right: 1px solid #eee;
+
+                p { font-size: 0.9em; }
+            }
+
+            .city-action {
+                padding: 20px;
+
+                i { color: 
+                    $color-secondary; 
+                    font-size: 1.2em;
+                }
+
+                .price {
+                    s { 
+                        color: #888; 
+                        font-size: 0.9em;
+                        font-weight: bold;
+                    }
+
+                    span { 
+                        color: darken($color-secondary, 10%);
+                        font-size: 1.2em;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+}

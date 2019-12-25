@@ -1,6 +1,3 @@
-let $ = require('jquery');
-let TypeIt = require('typeit');
-
 $(document).ready(function() {
     $('#pageHome .nav-toggle').click(function() {
         $('#pageHome .nav-menu').addClass('active');
@@ -27,4 +24,20 @@ $(document).ready(function() {
             }
         })
     });
+
+    $('#tbcPhotosCarousel').owlCarousel({
+        loop: true,
+        margin: 10,
+        responsive:{
+            0: {
+                items: 1
+            }
+        },
+        nav: true,
+        dots: false,
+        navText: [
+            '<i class="material-icons">keyboard_arrow_left</i>',
+            '<i class="material-icons">keyboard_arrow_right</i>'
+        ]
+    })
 })

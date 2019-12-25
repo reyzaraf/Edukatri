@@ -51,8 +51,5 @@
     "webpack-stream": "^4.0.3",
     "gulp-if": "^3.0.0"
   },
-  "dependencies": {
-    "jquery": "^3.4.1",
-    "typeit": "^6.0.3"
-  }
+  "dependencies": {}
 }

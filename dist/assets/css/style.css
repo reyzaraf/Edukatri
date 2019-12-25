@@ -11,7 +11,7 @@
   color: #ff8440; }
 
 .text-color-grey {
-  color: #ccc; }
+  color: #aaa; }
 
 .text-color-888 {
   color: #888; }
@@ -1341,5 +1341,102 @@ hr {
             left: 100%;
             -webkit-transform: translate(-98%, -50%);
                     transform: translate(-98%, -50%); }
+
+#tourByCity .page-title .title {
+  color: #333;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 20px; }
+
+#tourByCity .filter-results .price-range {
+  border-radius: 80px;
+  border: 1px solid #ccc; }
+
+#tourByCity #tbcPhotosCarousel {
+  position: relative; }
+  #tourByCity #tbcPhotosCarousel .owl-item img {
+    border-radius: 10px; }
+  #tourByCity #tbcPhotosCarousel .owl-nav button {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    color: #888;
+    background: white;
+    border-radius: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    #tourByCity #tbcPhotosCarousel .owl-nav button.owl-prev {
+      left: 5px; }
+    #tourByCity #tbcPhotosCarousel .owl-nav button.owl-next {
+      right: 5px; }
+
+#tourByCity .cities-category a.city {
+  position: relative;
+  height: 140px; }
+  #tourByCity .cities-category a.city img {
+    border-radius: 12px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -webkit-filter: brightness(70%);
+            filter: brightness(70%);
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all 200ms ease;
+    transition: all 200ms ease; }
+  #tourByCity .cities-category a.city span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    color: white;
+    font-weight: bold;
+    font-size: 1.4em; }
+  #tourByCity .cities-category a.city:hover img {
+    -webkit-filter: brightness(60%);
+            filter: brightness(60%); }
+
+#tourByCity .cities-card .city-item {
+  color: #333;
+  text-decoration: none;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden; }
+  #tourByCity .cities-card .city-item .city-image img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    height: 100%; }
+  #tourByCity .cities-card .city-item .city-desc {
+    border-right: 1px solid #eee; }
+    #tourByCity .cities-card .city-item .city-desc p {
+      font-size: 0.9em; }
+  #tourByCity .cities-card .city-item .city-action {
+    padding: 20px; }
+    #tourByCity .cities-card .city-item .city-action i {
+      color: #ff8440;
+      font-size: 1.2em; }
+    #tourByCity .cities-card .city-item .city-action .price s {
+      color: #888;
+      font-size: 0.9em;
+      font-weight: bold; }
+    #tourByCity .cities-card .city-item .city-action .price span {
+      color: #ff630d;
+      font-size: 1.2em;
+      font-weight: bold; }
 
 /*# sourceMappingURL=app.css.map */

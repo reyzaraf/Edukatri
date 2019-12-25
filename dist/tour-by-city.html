@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Booking</title>
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Baloo&display=swap" rel="stylesheet">
+
+    <link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+
+    <link rel="stylesheet" type="text/css" href="./assets/css/slider.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/slick.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/carousell.css">
+    <link rel="stylesheet" type="text/css" href="./assets/vendors/owl-carousel/css/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/vendors/owl-carousel/css/owl.theme.default.min.css">
+
+    <link rel="stylesheet" type="text/css" href="./assets/css/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/price-range.css">
+</head>
+
+<body id="tourByCity">
+    <nav class="navbar fixed-top navbar-expand">
+        <div class="container">
+            <div class="navbar-main-toggle"><i class="material-icons">dehaze</i></div>
+            <div class="navbar-left">
+                <a class="navbar-brand" href="/">Edukatrip</a>
+            </div>
+            <div class="navbar-right">
+                <ul class="navbar-menu">
+                    <li class="navbar-button">
+                        <a href="#">Become a Host</a>
+                    </li>
+                    <li class="navbar-link with-icon">
+                        <a href="#">
+                            <i class="material-icons">local_activity</i>
+                            <span>My Trip</span>
+                        </a>
+                    </li>
+                    <li class="navbar-link icon">
+                        <a href="#" id="navbarNotifDropdownButton">
+                            <i class="material-icons">notifications</i>
+                        </a>
+                        <div class="navbar-notif-dropdown">
+                            <form action="#">
+                                <ul>
+                                    <li>
+                                        <span>Notifikasi Email</span>
+                                        <span><input type="checkbox" name="notification" id="email"></span>
+                                    </li>
+                                    <li>
+                                        <span>Notifikasi SMS</span>
+                                        <span><input type="checkbox" name="notification" id="sms"></span>
+                                    </li>
+                                    <li>
+                                        <span>Notifikasi Whatsapp</span>
+                                        <span><input type="checkbox" name="notification" id="whatsapp"></span>
+                                    </li>
+                                </ul>
+                                <button class="btn btn-primary btn-block">Simpan Perubahan</button>
+                            </form>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="navbar-menu-responsive">
+                    <a class="navbar-brand" href="/">Edukatrip</a>
+                    <li>
+                        <a href="#">
+                            <i class="material-icons">person</i>
+                            <span>Become a Host</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="material-icons">local_activity</i>
+                            <span>My Trip</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="material-icons">notifications</i>
+                            <span>Notifications</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="bg-overlay"></div>
+                <div class="navbar-separator"></div>
+                <div class="navbar-profile">
+                    <a href="#" id="navbarProfileDropdownButton">
+                        <span class="navbar-profile-name">Ghany Razaq Arghantara</span>
+                        <span class="navbar-profile-image">
+                            <img src="./assets/img/persons/profile-1.png" alt="">
+                        </span>
+                    </a>
+                    <div class="navbar-profile-dropdown">
+                        <div class="navbar-profile-top">
+                            <div class="navbar-profile-progress-wrapper">
+                                <div class="navbar-profile-progress" style="width: 50%"></div>
+                            </div>
+                            <a href="#" class="navbar-profile-complete-task">
+                                <span>Complete Your Profile</span>
+                                <i class="material-icons">keyboard_arrow_right</i>
+                            </a>
+                        </div>
+                        <div class="navbar-profile-bottom">
+                            <ul class="navbar-profile-bottom-left">
+                                <li>
+                                    <a href="#">
+                                        <span>Edukatrip Points</span>
+                                        <span>854</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>My Rewards</span>
+                                        <span>2</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="navbar-profile-bottom-separator"></div>
+                            <ul class="navbar-profile-bottom-right">
+                                <li><a href="#">Profile</a></li>
+                                <li><a href="#">Wishlist</a></li>
+                                <li><a href="#">Settings</a></li>
+                                <br>
+                                <li><a href="#">Log Out</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <br>
+    <div class="mb-5 mb-md-3"></div>
+
+    <br><br>
+    <div class="container page-title">
+        <div class="title">Limited Tour Several Days Only</div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 mb-3 mb-md-0">
+                <div class="card mb-3">
+                    <div class="card-header d-flex justify-content-between">
+                        <b>Tour By City</b>
+                        <a href="#">Show All</a>
+                    </div>
+                    <div class="card-body">
+                        <form action="#" class="form-row">
+                            <div class="col-6">
+                                <div class="input-group d-flex align-items-center">
+                                    <input type="radio" class="mr-1" name="tourbycity" id="tbcBestRated">
+                                    <label class="mb-0" for="tbcBestRated">Best Rated</label>
+                                </div>
+                                <div class="input-group d-flex align-items-center">
+                                    <input type="radio" class="mr-1" name="tourbycity" id="tbcBestPrice">
+                                    <label class="mb-0" for="tbcBestPrice">Best Price</label>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="input-group d-flex align-items-center">
+                                    <input type="radio" class="mr-1" name="tourbycity" id="tbcPlace">
+                                    <label class="mb-0" for="tbcPlace">Place</label>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="card mb-3 filter-results">
+                    <div class="card-header d-flex justify-content-between">
+                        <b>Filter Results</b>
+                        <a href="#">Reset Filter</a>
+                    </div>
+                    <div class="card-body px-4">
+                        <form action="#">
+                            <h5 class="font-weight-bold">Price Range</h5>
+
+                            <div class="form-row mb-3 justify-content-between">
+                                <input class="col-5 price-range js-input-from" type="text" aria-label="First name" class="form-control" placeholder="Rp.0">
+                                <input class="col-5 price-range js-input-to" type="text" aria-label="First name" class="form-control" placeholder="Rp.10.000.000">
+                            </div>
+                            <div class="form-row d-block w-100 mb-3">
+                                <div class="wrapper">
+                                    <div class="range-slider">
+                                        <input type="text" class="js-range-slider" value="" />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h5 class="font-weight-bold">Dates</h5>
+                            <!-- Date Picker Section -->
+                            <div class="form-row">
+                                <div class="col-lg-6 mb-3 mb-lg-0">
+                                    <div class="date-from">
+                                        <div class="date-title">
+                                            <b>From</b>
+                                        </div>
+                                        <div class="input-group">
+                                            <input class="date-range form-control" type="date" aria-label="First name" class="form-control" placeholder="Rp.0">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="date-from">
+                                        <div class="date-title">
+                                            <b>To</b>
+                                        </div>
+                                        <div class="input-group">
+                                            <input class="date-range form-control" type="date" aria-label="First name" class="form-control" placeholder="Rp.0">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="card mb-3">
+                    <div class="card-header d-flex justify-content-between">
+                        <b>Create my own tour</b>
+                    </div>
+                    <div class="card-body px-4">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, numquam facere iure odit ut natus.</p>
+                        <a href="#" class="btn btn-primary btn-block">Create Tour</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header d-flex justify-content-between">
+                        <b>Get Photos Like These</b>
+                    </div>
+                    <div class="card-body px-4">
+                        <div id="tbcPhotosCarousel" class="owl-carousel owl-theme">
+                            <div><img src="https://images.unsplash.com/photo-1529220543625-9a82e357511e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" class="img-fluid" alt=""></div>
+                            <div><img src="https://images.unsplash.com/photo-1529220543625-9a82e357511e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" class="img-fluid" alt=""></div>
+                            <div><img src="https://images.unsplash.com/photo-1529220543625-9a82e357511e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" class="img-fluid" alt=""></div>
+                            <div><img src="https://images.unsplash.com/photo-1529220543625-9a82e357511e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" class="img-fluid" alt=""></div>
+                            <div><img src="https://images.unsplash.com/photo-1529220543625-9a82e357511e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" class="img-fluid" alt=""></div>
+                        </div>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At illum dolorem nihil esse amet quos!</p>
+                        <a href="#" class="btn btn-primary btn-block">Find How</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <form class="form mb-3">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1"><i class="material-icons">search</i></span>
+                        </div>
+                        <input type="search" class="form-control" placeholder="Search" aria-label="search" aria-describedby="basic-addon1">
+                    </div>
+                </form>
+
+                <div class="page-title mb-3">
+                    <div class="title">Choose which city you wanna go</div>
+                </div>
+
+                <div class="cities-category mb-5 row">
+                    <a href="#" class="city col">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT0UImUj4_nulfbQPyZEC2oqJybA299ZxgjY3otipGEJiGSbzGE" class="img-fluid" alt="">
+                        <span>Bandung</span>
+                    </a>
+                    <a href="#" class="city col">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRVTp6pEMsFl2ebrjNzIpntuczobwSlNU8uMO44hRqpF4zqaaaz" class="img-fluid" alt="">
+                        <span>Yogyakarta</span>
+                    </a>
+                    <a href="#" class="city col">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ6q7xoSH6P7RuOhjbKlBYLLJlE2impNLdK-Z5eLga09YfmhQoH" class="img-fluid" alt="">
+                        <span>Malang</span>
+                    </a>
+                </div>
+
+                <div class="cities-card">
+                    <a href="#" class="city-item mb-3 d-block">
+                        <div class="row m-0 m-md-auto">
+                            <div class="col-md-3 p-0 city-image">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRVTp6pEMsFl2ebrjNzIpntuczobwSlNU8uMO44hRqpF4zqaaaz" class="img-fluid" alt="">
+                            </div>
+                            <div class="col-md p-3 city-desc">
+                                <h4>Institut Teknologi Bandung</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium inventore rem cupiditate quas.</p>
+                                <p>Institut Teknologi Bandung</p>
+                                <span class="text-color-grey">3 Days Tour</span>
+                            </div>
+                            <div class="col-md-3 p-3 city-action d-flex flex-column justify-content-end">
+                                <div class="rating d-flex align-items-center mb-3">
+                                    <i class="material-icons mr-1">star</i>
+                                    <span><b>4.7</b></span>
+                                    <span class="text-color-grey">(237)</span>
+                                </div>
+                                <div class="price d-flex flex-column">
+                                    <s>Rp 630.000</s>
+                                    <span>Rp 470.000</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="city-item mb-3 d-block">
+                        <div class="row m-0 m-md-auto">
+                            <div class="col-md-3 p-0 city-image">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRVTp6pEMsFl2ebrjNzIpntuczobwSlNU8uMO44hRqpF4zqaaaz" class="img-fluid" alt="">
+                            </div>
+                            <div class="col-md p-3 city-desc">
+                                <h4>Institut Teknologi Bandung</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium inventore rem cupiditate quas.</p>
+                                <p>Institut Teknologi Bandung</p>
+                                <span class="text-color-grey">3 Days Tour</span>
+                            </div>
+                            <div class="col-md-3 p-3 city-action d-flex flex-column justify-content-end">
+                                <div class="rating d-flex align-items-center mb-3">
+                                    <i class="material-icons mr-1">star</i>
+                                    <span><b>4.7</b></span>
+                                    <span class="text-color-grey">(237)</span>
+                                </div>
+                                <div class="price d-flex flex-column">
+                                    <s>Rp 630.000</s>
+                                    <span>Rp 470.000</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="city-item mb-3 d-block">
+                        <div class="row m-0 m-md-auto">
+                            <div class="col-md-3 p-0 city-image">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRVTp6pEMsFl2ebrjNzIpntuczobwSlNU8uMO44hRqpF4zqaaaz" class="img-fluid" alt="">
+                            </div>
+                            <div class="col-md p-3 city-desc">
+                                <h4>Institut Teknologi Bandung</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium inventore rem cupiditate quas.</p>
+                                <p>Institut Teknologi Bandung</p>
+                                <span class="text-color-grey">3 Days Tour</span>
+                            </div>
+                            <div class="col-md-3 p-3 city-action d-flex flex-column justify-content-end">
+                                <div class="rating d-flex align-items-center mb-3">
+                                    <i class="material-icons mr-1">star</i>
+                                    <span><b>4.7</b></span>
+                                    <span class="text-color-grey">(237)</span>
+                                </div>
+                                <div class="price d-flex flex-column">
+                                    <s>Rp 630.000</s>
+                                    <span>Rp 470.000</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <section class="logo col-lg-2 text-size-big-2 font-weight-bold">
+                    <a href="#">Edukatrip</a>
+                </section>
+                <section class="col-lg-4 menu">
+                    <div class="menu-items">
+                        <div class="row">
+                            <div class="col-lg-4 d-flex flex-column">
+                                <a href="#" class="item">Home</a>
+                                <a href="#" class="item">Discovery</a>
+                                <a href="#" class="item">Photos</a>
+                                <a href="#" class="item">Contact</a>
+                            </div>
+                            <div class="col-lg-4 d-flex flex-column">
+                                <a href="#" class="item">About</a>
+                                <a href="#" class="item">Helps</a>
+                                <a href="#" class="item">Terms</a>
+                                <a href="#" class="item">Guidelines</a>
+                            </div>
+                            <div class="col-lg-4 d-flex flex-column">
+                                <a href="#" class="item">Testimonials</a>
+                                <a href="#" class="item">Advertise</a>
+                                <a href="#" class="item">Integrations</a>
+                                <a href="#" class="item">Careers</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="col-lg-4 subscribe">
+                    <form action="#">
+                        <input type="email" placeholder="Email">
+                        <button type="submit">
+                            <i class="material-icons">near_me</i>
+                        </button>
+                    </form>
+                    <p class="mt-2">Stay in touch with us for the freshest products!</p>
+                </section>
+                <section class="col-xl-2 socmed">
+                    <div class="row justify-content-around">
+                        <a href="#"><i class="fa fa-instagram fa-2x"></i></a>
+                        <a href="#"><i class="fa fa-twitter fa-2x"></i></a>
+                        <a href="#"><i class="fa fa-facebook fa-2x"></i></a>
+                        <a href="#"><i class="fa fa-globe fa-2x"></i></a>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.6.2/bootstrap-slider.js"></script>
+    <script src='https://github.com/mattbryson/TouchSwipe-Jquery-Plugin/blob/master/jquery.touchSwipe.min.js'></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="./assets/js/slider.js"></script>
+    <script src="./assets/js/slick.js"></script>
+    <script src="./assets/js/range-slider.js"></script>
+    <script src="./assets/vendors/owl-carousel/owl.carousel.min.js"></script>
+    <script src="./assets/js/app.js"></script>
+</body>
+
+</html>
