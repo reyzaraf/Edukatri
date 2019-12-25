@@ -87,6 +87,10 @@ $(document).ready(function () {
         $('.navbar-profile-dropdown').toggleClass('active');
     });
 
+    $('#navbarNotifDropdownButton').click(function () {
+        $('.navbar-notif-dropdown').toggleClass('active');
+    });
+
     $('.navbar-main-toggle').click(function () {
         $('.navbar-menu-responsive').addClass('active');
         $('.navbar-menu-responsive + .bg-overlay').click(function (e) {
